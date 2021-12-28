@@ -7,7 +7,7 @@ def factorial_of_num(num):
     fact = 1
     for i in range(1, num+1):
         fact *= i
-    print 'factorial of number ', num, ' is ', fact
+    print('factorial of number ', num, ' is ', fact)
     return fact
 
 
@@ -21,12 +21,12 @@ def factorial_of_num_recursive(num):
 
 def main():
     """Starting of the program."""
-    print "Enter a number to find its factorial:"
+    print("Enter a number to find its factorial:")
     num = int(raw_input())
-    print "The factorial of given number '%d' is '%d'" % (
-        num, factorial_of_num(num))
-    print "The factorial of given number using recursive '%d' is '%d'" % (
-        num, factorial_of_num_recursive(num))
+    print("The factorial of given number '%d' is '%d'" % (
+        num, factorial_of_num(num)))
+    print("The factorial of given number using recursive '%d' is '%d'" % (
+        num, factorial_of_num_recursive(num)))
 
 
 if __name__ == '__main__':

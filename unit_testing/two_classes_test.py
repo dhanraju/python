@@ -7,29 +7,29 @@ class TwoClassesTestBase(object):
     class TestHelloWorld(unittest.TestCase):
         @classmethod
         def setUpClass(self):
-            print 'In setUpClass, self.test_flag = %d' % self.test_flag
+            print("In setUpClass, self.test_flag = %d" % self.test_flag)
             pass
 
         @classmethod
         def tearDownClass(self):
-            print 'In tearDownClass.'
+            print("In tearDownClass.")
             pass
 
         def test_helloworld(self):
-            print 'testing hello world.'
+            print("testing hello world.")
             st = 'Hello dhanu'
             ret_value = helloworld.helloworld(st)
-            print 'ret_value = ', ret_value
+            print("ret_value = ", ret_value)
             assert(ret_value == True)
 
 
 class Class1Test(TwoClassesTestBase.TestHelloWorld):
-    print 'Class1Test.'
+    print("Class1Test.")
     test_flag = False
 
 
 class Class2Test(TwoClassesTestBase.TestHelloWorld):
-    print 'Class2Test.'
+    print("Class2Test.")
     test_flag = True
 
 

@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # SER.open()
     SER.isOpen()
 
-    print 'Enter your commands below.\r\nInsert "exit" to leave the application.'
+    print("Enter your commands below.\r\nInsert "exit" to leave the application.")
 
     while 1:
         # get keyboard input
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         INPUT = raw_input()
         # Python 3 users
         # INPUT = INPUT(">> ")
-        print INPUT
+        print(INPUT)
         if INPUT == 'exit':
             SER.close()
             exit()
@@ -33,18 +33,18 @@ if __name__ == '__main__':
             # (note that I happend a \r\n carriage return and line feed
             # to the characters - this is requested by my device)
             # SER.write(INPUT + '\r\n')
-            print "return of SER.write = ", SER.write(INPUT + '\r\n')
+            print("return of SER.write = ", SER.write(INPUT + '\r\n'))
             OUT = ''
             # let's wait one second before reading output (let's give device time to answer)
             # time.sleep(1)
-            print SER.readline()
-            # print SER.read(1)
+            print(SER.readline())
+            # print(SER.read(1))
             while SER.inWaiting() > 0:
-                print "Inside while\n"
+                print("Inside while\n")
                 # OUT += SER.read(1)
                 OUT += SER.readline()
                 if OUT != '':
-                    print "CMD OUTPUT = " + OUT
-                    print ">>" + OUT
+                    print("CMD OUTPUT = " + OUT)
+                    print(">>" + OUT)
                 else:
-                    print "something went wrong"
+                    print("something went wrong")

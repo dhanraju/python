@@ -13,7 +13,7 @@ class MyThread(threading.Thread):
         self.counter = counter
     def run(self):
         '''Run thread.'''
-        print "Starting " + self.name
+        print("Starting " + self.name)
         # Get lock to synchronize THREADS
         THREADLOCK.acquire()
         print_time(self.name, self.counter, 3)
@@ -24,7 +24,7 @@ def print_time(thread_name, delay, counter):
     '''Print time.'''
     while counter:
         time.sleep(delay)
-        print "%s: %s" % (thread_name, time.ctime(time.time()))
+        print("%s: %s" % (thread_name, time.ctime(time.time())))
         counter -= 1
 
 
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     # Wait for all THREADS to complete
     for t in THREADS:
         t.join()
-    print "Exiting Main Thread"
+    print("Exiting Main Thread")
 
 #pylint: disable=pointless-string-statement
 '''

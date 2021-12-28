@@ -32,10 +32,10 @@ class ChatClient(object):
         response = self.input_fd.readline().strip()
         if not response.startswith("Hello"):
             raise ClientError(response)
-        print response
+        print(response)
         #Start out by printing out the list of members.
         self.output.write('/users\r\n')
-        print "Currently in the chat room:", self.input_fd.readline().strip()
+        print("Currently in the chat room:", self.input_fd.readline().strip())
         self.run()
 
     def run(self):
@@ -54,7 +54,7 @@ class ChatClient(object):
         while input_text:
             input_text = self.input_fd.readline()
             if input_text:
-                print input_text.strip()
+                print(input_text.strip())
         propagate_stdin.done = True
 
     class PropagateStandardInput(Thread):
@@ -88,7 +88,7 @@ if __name__ == '__main__':
         DEFAULT_NICKNAME = None
 
     if len(sys.argv) < 2 or not DEFAULT_NICKNAME:
-        print 'Usage: %s [username]' % sys.argv[0]
+        print("Usage: %s [username]" % sys.argv[0])
         sys.exit(1)
 
     if len(sys.argv) > 1:

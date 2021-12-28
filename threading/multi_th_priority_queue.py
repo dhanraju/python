@@ -16,9 +16,9 @@ class MyThread(threading.Thread):
         self.que = que
     def run(self):
         '''Run method.'''
-        print "Starting " + self.name
+        print("Starting " + self.name)
         process_data(self.name, self.q)
-        print "Exiting " + self.name
+        print("Exiting " + self.name)
 
 def process_data(thread_name, que):
     '''Process data.'''
@@ -27,7 +27,7 @@ def process_data(thread_name, que):
         if not WORKQUEUE.empty():
             data = que.get()
             QUEUELOCK.release()
-            print "%s processing %s" % (thread_name, data)
+            print("%s processing %s" % (thread_name, data))
         else:
             QUEUELOCK.release()
         time.sleep(1)
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     # Wait for all THREADS to complete
     for t in THREADS:
         t.join()
-    print "Exiting Main Thread"
+    print("Exiting Main Thread")
 
 #pylint: disable=pointless-string-statement
 '''

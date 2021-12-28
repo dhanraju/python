@@ -14,9 +14,9 @@ def fibonacci_series(num):
 
 def main():
     """Start of the program."""
-    print "Enter a number to get fibonacci series:"
+    print("Enter a number to get fibonacci series:")
     num = int(raw_input())
-    print fibonacci_series(num)
+    print(fibonacci_series(num))
 
 if __name__ == '__main__':
     main()

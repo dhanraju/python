@@ -1,6 +1,6 @@
 
 def helloworld(st):
-    print st
+    print(st)
     return True
 
 def main():

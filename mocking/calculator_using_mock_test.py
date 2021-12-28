@@ -2,23 +2,28 @@
 import os
 import sys
 
-from unittest import TestCase
-# from calculator import Calculator
-from mock import patch
+import unittest
+from unittest.mock import patch
+# from unittest import TestCase
+from calculator import Calculator
+# from mock import Calculator
 
 CURR_DIR = '%s' % os.getcwd()
 
 sys.path.append(CURR_DIR)
 
 
-class TestCalculator(TestCase):
+class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
 
     @patch('.Calculator.add', return_value=9)
     def test_sum(self, add):
         '''Test sum operation.'''
-        self.assertEqual(add(2, 3), 9)
+        self.assertEqual(add(2, 3), 6)
 
+
+if __name__ == '__main__':
+    unittest.main()
 
 # Ref:
 # https://semaphoreci.com/community/tutorials/getting-started-with-mocking-in-python

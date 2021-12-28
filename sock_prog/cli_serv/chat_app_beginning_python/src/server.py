@@ -115,12 +115,12 @@ class RequestHandler(SocketServer.StreamRequestHandler):
 
     def users_command(self, ignored):
         """Users command."""
-        print ignored
+        print(ignored)
         self.private_message(', '.join(self.server.users.keys()))
 
     def messages_command(self, ignored):
         """Messages command."""
-        print ignored
+        print(ignored)
         self.wfile.write(self.msgs_queue)
         self.wfile.write('\r\n')
 

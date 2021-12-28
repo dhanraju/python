@@ -15,9 +15,9 @@ class MyThread(threading.Thread):
         self.counter = counter
     def run(self):
         '''Run Thread.'''
-        print "Starting " + self.name
+        print("Starting " + self.name)
         print_time(self.name, self.counter, 5)
-        print "Exiting " + self.name
+        print("Exiting " + self.name)
 
 def print_time(thread_name, counter, delay):
     '''Pring time.'''
@@ -25,7 +25,7 @@ def print_time(thread_name, counter, delay):
         if EXITFLAG:
             thread_name.exit()
         time.sleep(delay)
-        print "%s: %s" % (thread_name, time.ctime(time.time()))
+        print("%s: %s" % (thread_name, time.ctime(time.time())))
         counter -= 1
 
 
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     THREAD1.start()
     THREAD2.start()
 
-    print "Exiting Main Thread"
+    print("Exiting Main Thread")
 
 #pylint: disable=pointless-string-statement
 '''

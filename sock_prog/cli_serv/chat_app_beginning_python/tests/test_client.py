@@ -30,11 +30,11 @@ class TestChatClient(unittest.TestCase):
         # self.ServObj = ServObj(('127.0.0.1', 8001), ReqHandler).serve_forever()
         # self.RequestHandler()
         self.ReqHandler.process_input()
-        print "check point."
+        print("check point.")
         # self.CliObj = CliObj(host='127.0.0.1', port=8001, nickname='customer')
-        # print self.CliObj.output.write('/users\r\n')
+        # print(self.CliObj.output.write('/users\r\n'))
         '''readline = self.CliObj.input.readline().strip()
-        print readline
+        print(readline)
         self.assertIn('customer', readline)'''
 
 

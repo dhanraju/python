@@ -7,7 +7,7 @@ import select
 def chat_client():
     '''Client.'''
     if len(sys.argv) < 3:
-        print 'Usage : python chat_client.py hostname port'
+        print("Usage : python chat_client.py hostname port")
         sys.exit()
 
     host = sys.argv[1]
@@ -21,10 +21,10 @@ def chat_client():
         soc.connect((host, port))
     #pylint: disable=bare-except
     except:
-        print 'Unable to connect'
+        print("Unable to connect")
         sys.exit()
 
-    print 'Connected to remote host. You can start sending messages'
+    print("Connected to remote host. You can start sending messages")
     sys.stdout.write('[Me] ')
     sys.stdout.flush()
 
@@ -33,14 +33,14 @@ def chat_client():
 
         # Get the list sockets which are readable
         ready_to_read, ready_to_write, in_error = select.select(socket_list, [], [])
-        print ready_to_write, in_error
+        print(ready_to_write, in_error)
 
         for sock in ready_to_read:
             if sock == soc:
                 # incoming message from remote server, s
                 data = sock.recv(4096)
                 if not data:
-                    print '\nDisconnected from chat server'
+                    print("\nDisconnected from chat server")
                     sys.exit()
                 else:
                     #print data

@@ -16,4 +16,4 @@ class Calculator(object):
 
 if __name__ == '__main__':
     OBJ = Calculator()
-    print OBJ.add(5, 6)
+    print(OBJ.add(5, 6))

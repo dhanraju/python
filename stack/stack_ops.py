@@ -22,21 +22,21 @@ class Stack(object):
     def pop(self):
         '''Pop value at the top of stack also called as delete node at beginning.'''
         if self.top.data is None:
-            print 'Stack is empty'
+            print("Stack is empty")
             return
         temp = Node()
         temp = self.top
-        print 'Value popped = ', self.top.data
+        print("Value popped = ", self.top.data)
         self.top = self.top.link
 
     def display(self):
-        '''Print stack elements.'''
+        '''print stack elements.'''
         temp = self.top
         if temp.data is None:
-            print 'Stack is empty. No elements to display.'
+            print("Stack is empty. No elements to display.")
             return
         while temp.data is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
 
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     STACK_OBJ.pop()
     STACK_OBJ.pop()
 
-    print 'After popping.'
+    print("After popping.")
     STACK_OBJ.display()
     STACK_OBJ.pop()
     STACK_OBJ.pop()

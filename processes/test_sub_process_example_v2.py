@@ -27,7 +27,7 @@ class TestProcessLogging(TestCase):
     @classmethod
     def setup_class(cls):
         """Setup Class."""
-        print "\nsetup_class class:%s" % cls.__name__
+        print("\nsetup_class class:%s" % cls.__name__)
         temp_dir = tempfile.mkdtemp()
         temp_file_path = '%s/logger_%s.txt' % (
             temp_dir, time.strftime('%Y%m%d_%H%M%S'))
@@ -42,15 +42,15 @@ class TestProcessLogging(TestCase):
         cls.log_proc.start()
         # Verify the flag is set by thread.
         while not cls.que_obj.empty():
-            print "flag not yet set!"
+            print("flag not yet set!")
             cls.flag_set = cls.que_obj.get()
-        print "FLAG IS SET!!!"
+        print("FLAG IS SET!!!")
  
     @classmethod
     def teardown_class(cls):
         """Teardown Class."""
-        print "teardown_class class:%s" % cls.__name__
-        print "Process id = %d" % cls.proc.pid
+        print("teardown_class class:%s" % cls.__name__)
+        print("Process id = %d" % cls.proc.pid)
         cls.proc.kill()
         cls.log_proc.terminate()
         print('Is Logger Terminated: %s %s', cls.log_proc,
@@ -58,11 +58,11 @@ class TestProcessLogging(TestCase):
         cls.log_proc.join()
         print('Is Logger Joined: %s %s', cls.log_proc, cls.log_proc.is_alive())
         cls.log_file.close()
-        print "In teardown_class, flag_set = ", cls.que_obj.get()
+        print("In teardown_class, flag_set = ", cls.que_obj.get())
 
     def test_do_nothing(self):
         """Test Bubble Sort."""
-        print "\n<======================"
+        print("\n<======================")
         list_obj = [5, 3, 4, 1, 2]
         assert list_obj[0] == 5
 

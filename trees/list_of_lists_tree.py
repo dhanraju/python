@@ -48,7 +48,7 @@ if __name__ == '__main__':
     insert_right(ROOT, 6)
     insert_right(ROOT, 7)
     LI = get_left_child(ROOT)
-    print LI
+    print(LI)
 
     # set_root_val(1, 9)
     #print(ROOT)
@@ -56,4 +56,4 @@ if __name__ == '__main__':
     #insert_left(1, 11)
     #print(root)
 
-    print get_right_child(get_right_child(ROOT))
+    print(get_right_child(get_right_child(ROOT)))
