@@ -3,7 +3,7 @@
 class SortingTechniques(object):
     """Sorting Techniques class."""
     def __init__(self):
-        print "Constructor"
+        print("Constructor")
 
     @staticmethod
     def bubble_sort(list_obj):
@@ -46,8 +46,8 @@ def main():
     """Start of program."""
     sort_obj = SortingTechniques()
     list_obj = [5, 3, 6, 2, 4, 1]
-    print "Given list : ", list_obj
-    print "Bubble sorted list : ", sort_obj.bubble_sort(list_obj)
+    print("Given list : ", list_obj)
+    print("Bubble sorted list : ", sort_obj.bubble_sort(list_obj))
 
 if __name__ == '__main__':
     main()

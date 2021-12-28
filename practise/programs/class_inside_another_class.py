@@ -16,8 +16,8 @@ class Human(object):
 
     @classmethod
     def print_message(cls, arg_value):
-        print 'class value = %d' % cls.value
-        print 'Print message arg_value = %d' % arg_value
+        print("class value = %d" % cls.value)
+        print("print(message arg_value = %d" % arg_value)
 
     class Head(object):
         def __init__(self, value):
@@ -37,9 +37,9 @@ class Human(object):
 
 if __name__ == '__main__':
     dhan = Human(2)
-    print dhan.name
-    print dhan.head.talk()
-    print dhan.brain.think()
+    print(dhan.name)
+    print(dhan.head.talk())
+    print(dhan.brain.think())
 
 
 # Ref: https://pythonspot.com/inner-classes/

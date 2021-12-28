@@ -7,4 +7,4 @@ def word_count(sentence):
 if __name__ == '__main__':
     SENTENCE = raw_input(
         "Enter a sentence to find number of words present in it.")
-    print word_count(SENTENCE)
+    print(word_count(SENTENCE))

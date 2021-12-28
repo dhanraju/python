@@ -13,36 +13,36 @@ class TestSortingTechniques(object):
     @staticmethod
     def setup():
         """Setup."""
-        print "setup class:Test"
+        print("setup class:Test")
 
     @staticmethod
     def teardown():
         """Teardown."""
-        print "\n\nteardown class:Test"
+        print("\n\nteardown class:Test")
 
     @classmethod
     def setup_class(cls):
         """Setup Class."""
-        print "\nsetup_class class:%s" % cls.__name__
+        print("\nsetup_class class:%s" % cls.__name__)
 
     @classmethod
     def teardown_class(cls):
         """Teardown Class."""
-        print "teardown_class class:%s" % cls.__name__
+        print("teardown_class class:%s" % cls.__name__)
 
     @classmethod
     def setup_method(cls, method):
         """Setup Method."""
-        print "setup_method method:%s" % method.__name__
+        print("setup_method method:%s" % method.__name__)
 
     @classmethod
     def teardown_method(cls, method):
         """Teardown Method."""
-        print "teardown_method method:%s" % method.__name__
+        print("teardown_method method:%s" % method.__name__)
 
     def test_bubble_sort(self):
         """Test Bubble Sort."""
-        print "\ntest_bubble_sort <====================== actual test code"
+        print("\ntest_bubble_sort <====================== actual test code")
         list_obj = [5, 3, 4, 1, 2]
         assert SortObj.bubble_sort(list_obj) == [1, 2, 3, 4, 5]
 

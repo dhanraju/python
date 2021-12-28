@@ -38,29 +38,29 @@ class CircularLListOps(object):
             if second_list.data is not None:
                 temp = first_list
                 while temp.link is not None:
-                    print 'lock'
+                    print('lock')
                     temp = temp.link
                 temp.link = second_list'''
 
     def display(self):
         '''Displays contents of the linked list.'''
         if self.front.data is None:
-            print 'The queue is empty.'
+            print('The queue is empty.')
         else:
-            # print 'Elements present in linked list:'
+            # print('Elements present in linked list:')
             temp = self.front
             while temp.link is not self.front:
-                print temp.data
+                print(temp.data)
                 temp = temp.link
-            # Print last element in the queue.
+            # print(last element in the queue.
             if temp.link is self.front:
-                print temp.data
+                print(temp.data)
 
     def count(self):
         '''Counts the number of nodes present in the lined list.'''
         count = 0
         if self.front.data is None:
-            print 'No of elements present in the queue to count'
+            print('No of elements present in the queue to count')
         else:
             temp = self.front
             while temp.link is not self.front:
@@ -69,11 +69,11 @@ class CircularLListOps(object):
             # Count last element.
             if temp.link is self.front:
                 count += 1
-        print 'Number of elements present in the queue: %d' % count
+        print('Number of elements present in the queue: %d' % count)
 
     def erase(self):
         '''Erases all nodes from a linked list.'''
-        print 'erase'
+        print('erase')
         temp = Node()
 
         while self.front is not None:
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     CIRCULAR_LLIST_OPS_FIRST.addcirq_atend(3)
     CIRCULAR_LLIST_OPS_FIRST.addcirq_atend(4)
 
-    print 'First List:'
+    print('First List:')
     CIRCULAR_LLIST_OPS_FIRST.display()
 
     CIRCULAR_LLIST_OPS_FIRST.count()
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     CIRCULAR_LLIST_OPS_SECOND.addcirq_atend(7)
     CIRCULAR_LLIST_OPS_SECOND.addcirq_atend(8)
 
-    print 'Second List:'
+    print('Second List:')
     CIRCULAR_LLIST_OPS_SECOND.display()
 
     CIRCULAR_LLIST_OPS_SECOND.count()
@@ -111,5 +111,5 @@ if __name__ == '__main__':
     # CIRCULAR_LLIST_OPS_FIRST.display()
 
     CIRCULAR_LLIST_OPS_FIRST.erase()
-    print 'Number of elements after erasing:'
+    print('Number of elements after erasing:')
     # CIRCULAR_LLIST_OPS_FIRST.display()

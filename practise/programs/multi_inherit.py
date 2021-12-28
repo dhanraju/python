@@ -4,24 +4,24 @@ class ClassA(object):
     '''Base ClassA.'''
     def __init__(self):
         super(ClassA, self).__init__()
-        print "Class A constructor."
+        print("Class A constructor.")
 
 class ClassB(object):
     '''Base ClassB.'''
     def __init__(self):
         super(ClassB, self).__init__()
-        print "Class B constructor."
+        print("Class B constructor.")
 
 class Trial1(ClassA, ClassB):
     '''Dervied class Trial1.'''
     def __init__(self):
         super(Trial1, self).__init__()
-        print "triail1 constructor."
+        print("triail1 constructor.")
 
 if __name__ == '__main__':
-    print "Start."
+    print("Start.")
     Trial1()
-    print "End."
+    print("End.")
 
 
 # Output:

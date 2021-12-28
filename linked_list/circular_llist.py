@@ -33,7 +33,7 @@ class CircularLinkedList(object):
         '''Deletes an element from front of queue.'''
         # If the queue is empty, nothing to do.
         if self.front.data is None:
-            print 'The queue is empty.'
+            print('The queue is empty.')
         # Since queue has 1 or more elements, delete node at front.
         else:
             temp = Node()
@@ -52,22 +52,22 @@ class CircularLinkedList(object):
     def display_list(self):
         '''Display all the elements in linked list.'''
         if self.front.data is None:
-            print 'No elements to display.'
+            print('No elements to display.')
         else:
-            # print 'Elements present in linked list:'
+            # print('Elements present in linked list:')
             temp = self.front
             while temp.link is not self.front:
-                print temp.data
+                print(temp.data)
                 temp = temp.link
-            # Print last element in the queue.
+            # print(last element in the queue.
             if temp.link is self.front:
-                print temp.data
+                print(temp.data)
 
     def count(self):
         '''Counts number of elements present in the queue.'''
         count = 0
         if self.front.data is None:
-            print 'No of elements present in the queue to count'
+            print('No of elements present in the queue to count')
         else:
             temp = self.front
             while temp.link is not self.front:
@@ -76,7 +76,7 @@ class CircularLinkedList(object):
             # Count last element.
             if temp.link is self.front:
                 count += 1
-        print 'Number of elements present in the queue: %d' % count
+        print('Number of elements present in the queue: %d' % count)
 
 
 if __name__ == '__main__':
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     CIRCULAR_LLIST.addcirq_atend(30)
     CIRCULAR_LLIST.addcirq_atend(15)
 
-    print 'Queue BEFORE deletion:'
+    print('Queue BEFORE deletion:')
     CIRCULAR_LLIST.display_list()
 
     CIRCULAR_LLIST.count()
@@ -97,6 +97,6 @@ if __name__ == '__main__':
     CIRCULAR_LLIST.delcirq_atfront()
     CIRCULAR_LLIST.delcirq_atfront()
 
-    print 'Queue AFTER deletion:'
+    print('Queue AFTER deletion:')
     CIRCULAR_LLIST.display_list()
     CIRCULAR_LLIST.count()

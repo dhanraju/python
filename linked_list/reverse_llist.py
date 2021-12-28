@@ -36,7 +36,7 @@ class LList(object):
         '''Displays the contents of linked list.'''
         temp = self.node
         while temp.link is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
 
     def count(self):
@@ -62,4 +62,4 @@ if __name__ == '__main__':
 
     LLIST.display()
 
-    print 'Number of elements in the linked list = %d' % LLIST.count()
+    print('Number of elements in the linked list = %d' % LLIST.count())

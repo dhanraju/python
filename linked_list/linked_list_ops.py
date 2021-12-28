@@ -41,7 +41,7 @@ class LinkedList(object):
         for _ in range(loc):
             temp = temp.link
             if temp.data is None and temp.link is None:
-                print 'There are less than %d elements in list' % loc
+                print('There are less than %d elements in list' % loc)
                 return
         ref.link = temp.link
         ref.data = num
@@ -66,23 +66,23 @@ class LinkedList(object):
         if temp.data is num and temp.link is None:
             old.link = temp.link
             return
-        print 'Element %d not found' % num
+        print('Element %d not found' % num)
 
     def display(self):
         '''Display the contents of the linked list.'''
-        print 'Contents of linked list are:'
+        print('Contents of linked list are:')
         temp = self.node
-        # print self.node.data, self.node.link
+        # print(self.node.data, self.node.link)
         while temp.link is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
         # If the list index reaches last node or list contains only one node.
         if temp.data is not None and temp.link is None:
-            print temp.data
+            print(temp.data
 
     def count(self):
         '''Count the number of nodes present in the linked list.'''
-        print 'Returns count of number of nodes present in list.'
+        print('Returns count of number of nodes present in list.')
         count = 0
         temp = self.node
         while temp.link is not None:
@@ -93,7 +93,7 @@ class LinkedList(object):
 
 if __name__ == '__main__':
     L_LIST = LinkedList()
-    print 'Number of elements in the linked list = ', L_LIST.count()
+    print('Number of elements in the linked list = ', L_LIST.count())
 
     L_LIST.add_atend(14)
     L_LIST.add_atend(30)
@@ -114,7 +114,7 @@ if __name__ == '__main__':
     L_LIST.add_after(5, 99)
 
     L_LIST.display()
-    print 'Number of elements in the linked list = ', L_LIST.count()
+    print('Number of elements in the linked list = ', L_LIST.count())
 
     L_LIST.delete(99)
     L_LIST.delete(1)
@@ -123,4 +123,4 @@ if __name__ == '__main__':
     L_LIST.delete(0)
 
     L_LIST.display()
-    print 'Number of elements in the linked list = ', L_LIST.count()
+    print('Number of elements in the linked list = ', L_LIST.count())

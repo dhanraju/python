@@ -4,9 +4,9 @@ import sys
 
 def print_args(argv):
     '''Print command line args.'''
-    print "Total number of args: ", len(argv)
+    print("Total number of args: ", len(argv))
     for arg in range(0, len(argv)):
-        print "arg%d : %s" % (arg, argv[arg])
+        print("arg%d : %s" % (arg, argv[arg]))
 
 if __name__ == '__main__':
     print_args(sys.argv)

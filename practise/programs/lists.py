@@ -1,5 +1,5 @@
 '''Lists demonstration.'''
-print "***** List operations *****"
+print("***** List operations *****")
 LIST_OBJ1 = [1, 2, 1, 2, 3]
 LIST_OBJ1_DUP = [1, 2, 1, 2, 3]
 LIST_OBJ2 = [4, 5, 6, 7, 8]
@@ -8,58 +8,58 @@ LIST_OBJ4 = [0, 9, 8, 7, 6]
 TUPLE_OBJ = ('a', 'b', 'c', 'd', 'e')
 
 print
-print "***** Given lists *****"
-print "LIST_OBJ1 = ", LIST_OBJ1
-print "LIST_OBJ2 = ", LIST_OBJ2
-print "LIST_OBJ3 = ", LIST_OBJ3
-print "LIST_OBJ4 = ", LIST_OBJ4
-print "LIST_OBJ1_DUP = ", LIST_OBJ1_DUP
+print("***** Given lists *****")
+print("LIST_OBJ1 = ", LIST_OBJ1)
+print("LIST_OBJ2 = ", LIST_OBJ2)
+print("LIST_OBJ3 = ", LIST_OBJ3)
+print("LIST_OBJ4 = ", LIST_OBJ4)
+print("LIST_OBJ1_DUP = ", LIST_OBJ1_DUP)
 
 print
-print "***** List Indexing *****"
-print "LIST_OBJ1[0] = ", LIST_OBJ1[0]
-print "LIST_OBJ1[4] = ", LIST_OBJ1[4]
-print "LIST_OBJ1[-1] = ", LIST_OBJ1[-1]
-print "LIST_OBJ1[-4] = ", LIST_OBJ1[-4]
+print("***** List Indexing *****")
+print("LIST_OBJ1[0] = ", LIST_OBJ1[0])
+print("LIST_OBJ1[4] = ", LIST_OBJ1[4])
+print("LIST_OBJ1[-1] = ", LIST_OBJ1[-1])
+print("LIST_OBJ1[-4] = ", LIST_OBJ1[-4])
 
 print
-print "***** List slicing *****"
-print "LIST_OBJ1[:] = ", LIST_OBJ1[1:]
-print "LIST_OBJ1[:3] = ", LIST_OBJ1[:3]
-print "LIST_OBJ1[2:] = ", LIST_OBJ1[2:]
-print "LIST_OBJ1[2:4] = ", LIST_OBJ1[2:4]
+print("***** List slicing *****")
+print("LIST_OBJ1[:] = ", LIST_OBJ1[1:])
+print("LIST_OBJ1[:3] = ", LIST_OBJ1[:3])
+print("LIST_OBJ1[2:] = ", LIST_OBJ1[2:])
+print("LIST_OBJ1[2:4] = ", LIST_OBJ1[2:4])
 
 print
-print "***** List Methods *****"
-print "LIST_OBJ1.count(1) = ", LIST_OBJ1.count(1)
-print "LIST_OBJ1.index(3) = ", LIST_OBJ1.index(3)
+print("***** List Methods *****")
+print("LIST_OBJ1.count(1) = ", LIST_OBJ1.count(1))
+print("LIST_OBJ1.index(3) = ", LIST_OBJ1.index(3))
 LIST_OBJ2.append(9)
-print "LIST_OBJ2.append(9) = ", LIST_OBJ2
+print("LIST_OBJ2.append(9) = ", LIST_OBJ2)
 LIST_OBJ2.reverse()
-print "LIST_OBJ2.reverse() = ", LIST_OBJ2
+print("LIST_OBJ2.reverse() = ", LIST_OBJ2)
 LIST_OBJ2.sort()
-print "LIST_OBJ2.sort() = ", LIST_OBJ2
+print("LIST_OBJ2.sort() = ", LIST_OBJ2)
 LIST_OBJ2.extend(TUPLE_OBJ)
-print "LIST_OBJ2.extend(TUPLE_OBJ) = ", LIST_OBJ2
+print("LIST_OBJ2.extend(TUPLE_OBJ) = ", LIST_OBJ2)
 LIST_OBJ2.remove(8)
-print "LIST_OBJ2.remove(8) = ", LIST_OBJ2
+print("LIST_OBJ2.remove(8) = ", LIST_OBJ2)
 LIST_OBJ2.pop(-4)
-print "LIST_OBJ2.pop(-4) = ", LIST_OBJ2
+print("LIST_OBJ2.pop(-4) = ", LIST_OBJ2)
 LIST_OBJ2.sort()
-print "LIST_OBJ2.sort() = ", LIST_OBJ2
+print("LIST_OBJ2.sort() = ", LIST_OBJ2)
 
 print
-print "***** List Functions *****"
-print "len(LIST_OBJ4) = ", len(LIST_OBJ4)
-print "max(LIST_OBJ4) = ", max(LIST_OBJ4)
-print "min(LIST_OBJ4) = ", min(LIST_OBJ4)
-print "cmp(LIST_OBJ1, LIST_OBJ1_DUP) = ", cmp(LIST_OBJ1, LIST_OBJ1_DUP)
-print "list(TUPLE_OBJ) = ", list(TUPLE_OBJ)
+print("***** List Functions *****")
+print("len(LIST_OBJ4) = ", len(LIST_OBJ4))
+print("max(LIST_OBJ4) = ", max(LIST_OBJ4))
+print("min(LIST_OBJ4) = ", min(LIST_OBJ4))
+print("cmp(LIST_OBJ1, LIST_OBJ1_DUP) = ", cmp(LIST_OBJ1, LIST_OBJ1_DUP))
+print("list(TUPLE_OBJ) = ", list(TUPLE_OBJ))
 
 print
-print "***** List Operations *****"
-print "LIST_OBJ1 '+' LIST_OBJ2 = ", (LIST_OBJ1+LIST_OBJ2)
-print "LIST_OBJ1 '*' 2 = ", (LIST_OBJ1*2)
+print("***** List Operations *****")
+print("LIST_OBJ1 '+' LIST_OBJ2 = ", (LIST_OBJ1+LIST_OBJ2))
+print("LIST_OBJ1 '*' 2 = ", (LIST_OBJ1*2))
 
 #pylint: disable=pointless-string-statement
 """ ---------------- OUTPUT -----------------

@@ -42,10 +42,10 @@ class SortList(object):
         '''Display all elements present in the list.'''
         temp = self.node
         while temp.link is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
         if temp.data is not None and temp.link is None:
-            print temp.data
+            print(temp.data)
 
     def count(self):
         '''Counts number of elements present in the list.'''
@@ -67,21 +67,21 @@ class SortList(object):
         traverse_node = self.node
         # itr_count = 0
         if self.node.data is None:
-            print 'No elements present in given list.'
+            print('No elements present in given list.')
         else:
             while p.link is not None:
                 q = p.link
                 while q.link is not None:
                     # Arrange list in ascending order.
-                    #print 'before if: p.data = ', p.data, 'q.data = ', q.data
+                    #print('before if: p.data = ', p.data, 'q.data = ', q.data)
                     if p.data > q.data:
                         temp = p.data
                         p.data = q.data
                         q.data = temp
-                        # print 'inside if: p.data = ', p.data, 'q.data = ', q.data
+                        # print('inside if: p.data = ', p.data, 'q.data = ', q.data)
                     q = q.link
                     # itr_count += 1
-                    # print 'After %d iteration:' % itr_count
+                    # print('After %d iteration:' % itr_count)
                     # self.display_list()
                 if q.data is not None and q.link is None:
                     if p.data < q.data:
@@ -136,10 +136,10 @@ class SortList(object):
         p = self.node
         size_of_list = self.count()
         count = 0
-        print 'Number of elements in list = %d' % size_of_list
+        print('Number of elements in list = %d' % size_of_list)
         is_swapped = 1
         if self.node.data is None:
-            print 'No elements present in given list.'
+            print('No elements present in given list.')
         else:
             while count < size_of_list:
                 p = self.node
@@ -169,10 +169,10 @@ if __name__ == '__main__':
     BUBBLE_SORT_LIST.add_atend(2)
     BUBBLE_SORT_LIST.add_atend(1)
 
-    print 'Elements BEFORE Bubble sort:'
+    print('Elements BEFORE Bubble sort:')
     BUBBLE_SORT_LIST.display_list()
     BUBBLE_SORT_LIST.bubble_sort()
-    print 'Elements AFTER Bubble sort:'
+    print('Elements AFTER Bubble sort:')
     BUBBLE_SORT_LIST.display_list()
 
     SELECT_SORT_LIST = SortList()
@@ -187,10 +187,10 @@ if __name__ == '__main__':
     SELECT_SORT_LIST.add_atend(1)
 
 
-    print 'Elements BEFORE Selection sort:'
+    print('Elements BEFORE Selection sort:')
     SELECT_SORT_LIST.display_list()
     SELECT_SORT_LIST.selection_sort()
-    print 'Elements AFTER Selection sort:'
+    print('Elements AFTER Selection sort:')
     SELECT_SORT_LIST.display_list()
 
     SELECT_SORT_LIST_NOCOUNT = SortList()
@@ -205,8 +205,8 @@ if __name__ == '__main__':
     SELECT_SORT_LIST_NOCOUNT.add_atend(1)
 
 
-    print 'Elements BEFORE Selection sort:'
+    print('Elements BEFORE Selection sort:')
     SELECT_SORT_LIST_NOCOUNT.display_list()
     SELECT_SORT_LIST_NOCOUNT.selection_sort_nocount_use()
-    print 'Elements AFTER Selection sort:'
+    print('Elements AFTER Selection sort:')
     SELECT_SORT_LIST_NOCOUNT.display_list()

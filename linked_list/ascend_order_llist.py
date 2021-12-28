@@ -35,11 +35,11 @@ class AscendOrderLList(object):
         '''Display contents of the linked list.'''
         temp = self.node
         while temp.link is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
         # If the list index reaches last node or list contains only one node.
         if temp.data is not None and temp.link is None:
-            print temp.data
+            print(temp.data)
 
     def count(self):
         '''Counts the number of nodes present in the linked list.'''
@@ -64,4 +64,4 @@ if __name__ == '__main__':
 
     ASC_ORDER_LLIST.display()
 
-    print 'Number of elements in the linked list = %d' % ASC_ORDER_LLIST.count()
+    print('Number of elements in the linked list = %d' % ASC_ORDER_LLIST.count()

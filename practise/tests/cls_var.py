@@ -8,14 +8,14 @@ class ClassA(object):
     class ClassAB(TestCase):
         @classmethod
         def setUpClass(cls):
-            print 'in setUpClass: ', cls.var_a
-            print 'junk in ClassAB'
+            print("in setUpClass: ", cls.var_a)
+            print("junk in ClassAB")
         def method01(self):
-            print 'in classAB method01'
+            print("in classAB method01")
         def run_test(self):
-            print 'run_test, self.var_a = ', self.var_a
+            print("run_test, self.var_a = ", self.var_a)
         def test_ab(self):
-            print 'test_ab'
+            print("test_ab")
             self.run_test()
             self.assertEqual(True, True)
 

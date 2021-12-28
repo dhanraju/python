@@ -33,13 +33,13 @@ class AscendOrderLList(object):
     def display(self):
         '''Display contents of the linked list.'''
         temp = self.node
-        # print 'in display: ', temp.data
+        # print('in display: ', temp.data)
         while temp.link is not None:
-            print temp.data
+            print(temp.data)
             temp = temp.link
         # If the list index reaches last node or list contains only one node.
         if temp.data is not None and temp.link is None:
-            print temp.data
+            print(temp.data)
 
     def count(self):
         '''Counts the number of nodes present in the linked list.'''
@@ -122,9 +122,9 @@ if __name__ == '__main__':
     ASC_ORDER_LLIST_1.add_node(61)
     ASC_ORDER_LLIST_1.add_node(79)
 
-    print 'First linked list.'
+    print('First linked list.')
     ASC_ORDER_LLIST_1.display()
-    print 'No. of elements in the 1st llist = %d' % ASC_ORDER_LLIST_1.count()
+    print('No. of elements in the 1st llist = %d' % ASC_ORDER_LLIST_1.count())
 
     ASC_ORDER_LLIST_2.add_node(12)
     ASC_ORDER_LLIST_2.add_node(17)
@@ -134,11 +134,11 @@ if __name__ == '__main__':
     ASC_ORDER_LLIST_2.add_node(64)
     ASC_ORDER_LLIST_2.add_node(87)
 
-    print 'Second linked list.'
+    print('Second linked list.')
     ASC_ORDER_LLIST_2.display()
-    print 'No. of elements in the 2nd llist = %d' % ASC_ORDER_LLIST_2.count()
+    print('No. of elements in the 2nd llist = %d' % ASC_ORDER_LLIST_2.count())
 
     ASC_ORDER_LLIST_3.merge(ASC_ORDER_LLIST_1.node, ASC_ORDER_LLIST_2.node)
-    print 'Merged list is:'
+    print('Merged list is:')
     ASC_ORDER_LLIST_3.display()
-    print 'No. of elements in the 3rd llist = %d' % ASC_ORDER_LLIST_3.count()
+    print('No. of elements in the 3rd llist = %d' % ASC_ORDER_LLIST_3.count())

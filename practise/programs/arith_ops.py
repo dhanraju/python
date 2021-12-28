@@ -43,23 +43,23 @@ DICT_OBJ_LAMBDA = {
 
 def main():
     """Starting of the program."""
-    print "Selecet an arithmetic operation from below menu:"
-    print "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division"
-    print "5. Modulo"
+    print("Selecet an arithmetic operation from below menu:")
+    print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
+    print("5. Modulo")
     option = int(raw_input())
 
-    print "Enter two numbers:"
+    print("Enter two numbers:")
     num1 = int(raw_input())
     num2 = int(raw_input())
     if option in DICT_OBJ.keys():
-        print DICT_OBJ[option](num1, num2)
-        print "Solution using lamdba form: ", DICT_OBJ_LAMBDA[option](
-	           num1, num2)
+        print(DICT_OBJ[option](num1, num2))
+        print("Solution using lamdba form: ", DICT_OBJ_LAMBDA[option](
+	           num1, num2))
 
     # Lambda form demonstration.
-    # print "Solution using lambda form"
+    # print("Solution using lambda form"
         # for key_val in DICT_OBJ_LAMBDA:
-        # print DICT_OBJ_LAMBDA[key_val](num1, num2)
+        # print(DICT_OBJ_LAMBDA[key_val](num1, num2))
 
 
 if __name__ == '__main__':

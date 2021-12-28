@@ -23,7 +23,7 @@ class LinkedList(object):
         '''Print elements in linked list.'''
         node = self.cur_node
         while node:
-            print node.data
+            print(node.data)
             node = node.next
 
 

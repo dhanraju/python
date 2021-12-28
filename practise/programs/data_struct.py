@@ -85,20 +85,20 @@ if __name__ == '__main__':
 
     #pylint: disable=consider-using-enumerate
     for i in range(len((DATA))):
-        # print DATA[i][0]
+        # print(DATA[i][0])
         for value in DATA_BASE.keys():
             if DATA[i][0] == value:
-                # print DATA_BASE[value].name
+                # print(DATA_BASE[value].name
                 DATA_BASE[value].date.append(DATA[i][1])
                 DATA_BASE[value].place.append(DATA[i][2])
                 DATA_BASE[value].bank_name.append(DATA[i][3])
                 DATA_BASE[value].time_spent.append(DATA[i][4])
     #pylint: enable=consider-using-enumerate
-    print '\n\n\n\n\n'
+    print("\n\n\n\n\n")
     for value in DATA_BASE.keys():
-        print '***** %s Details *****' % value
-        print DATA_BASE[value].date
-        print DATA_BASE[value].place
-        print DATA_BASE[value].bank_name
-        print DATA_BASE[value].time_spent
-        print '**********************'
+        print("***** %s Details *****" % value)
+        print(DATA_BASE[value].date)
+        print(DATA_BASE[value].place)
+        print(DATA_BASE[value].bank_name)
+        print(DATA_BASE[value].time_spent)
+        print("**********************")
