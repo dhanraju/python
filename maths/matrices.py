@@ -137,7 +137,7 @@ if __name__ == '__main__':
     trans_result_mat = matrix_traspose(MAT_D)
     print('Transpose of MAT_D is:\n', trans_result_mat)
 
-    print('\n***** Is Square Matrix. *****'print)
+    print('\n***** Is Square Matrix. *****')
     print('Is MAT_A a square matrix?\n', is_square_matrix(MAT_A))
     print('Is MAT_B a square matrix?\n', is_square_matrix(MAT_B))
 
