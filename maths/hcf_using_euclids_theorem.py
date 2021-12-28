@@ -27,7 +27,7 @@ def getHCF(val_a, val_b):
     # print('val_a_factors = ', val_a_factors)
     # print('val_b_factors = ', val_b_factors)
     common_factors = getCommonFactors(val_a_factors, val_b_factors)
-    if len(common_factors) is 0:
+    if len(common_factors) == 0:
         print('There is no HCF of numbers: ', val_a, val_b)
         return
     return common_factors[-1]
@@ -46,14 +46,14 @@ def euclidDivision(val_a, val_b):
     temp = 0
     # Initial check: Is large number divisible by small number,
     # return small numer as HCF
-    if large_num%small_num is 0:
+    if large_num%small_num == 0:
         # print('Initial check passed!')
         return small_num
-    while remainder is not 0:
+    while remainder != 0:
         # print('***', large_num, small_num, remainder, quotient)
         quotient = large_num%small_num
         remainder = large_num/small_num
-        if quotient is 0:
+        if quotient == 0:
             return temp
         else:
             temp = quotient
