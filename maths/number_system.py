@@ -39,12 +39,15 @@ class Conversion(object):
         converted_num = ''
         while base <= temp:
             # Retrieve appropriate dictionary key for a value.
-            position_value = self.hexa_ns.keys()[self.hexa_ns.values().index(
-                temp%base)]
+            print(self.hexa_ns.keys())
+            print(self.hexa_ns.values())
+            print(list(self.hexa_ns.keys())[4])
+            print(temp%base)
+            print(list(self.hexa_ns.values())[int(temp%base)])
+            position_value = list(self.hexa_ns.keys())[list(self.hexa_ns.values())[int(temp%base)]]
             converted_num = position_value + converted_num
             temp /= base
-        position_value = self.hexa_ns.keys()[self.hexa_ns.values().index(
-            temp%base)]
+        position_value = list(self.hexa_ns.keys())[list(self.hexa_ns.values())[int(temp%base)]]
         converted_num = position_value + converted_num
         print("Given decimal number %s in base \'%d\' is: %s" % (
             i_value, base, converted_num))
