@@ -1,7 +1,7 @@
 '''Euclid's Division Lemma Theorem:
 Given positive integers a and b, there exist unique pair of integers
 q and r satisfying a = bq + r, 0 <= r < b.
-''')
+'''
 
 # METHOD 1: Traditional way of finding HCF of two numbers.
 def factorsOfValue(val):
