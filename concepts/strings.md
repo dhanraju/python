@@ -102,53 +102,53 @@ st.strip()
 
 28. Check if a string begins with or ends with a specific character?
 
-st.startswith('This')
-st.endswith('!')
+  st.startswith('This')
+  st.endswith('!')
 
 29. Convert first and last character of a string?
 
-st1[0].upper() + st[1:-1] + st[-1].upper()
+  st1[0].upper() + st[1:-1] + st[-1].upper()
 
 
 30. Print every 2nd character in the given string?
 
-st[0:-1:2]
+  st[0:-1:2]
 
 
 31. Split a string on a specific character?
 
-print(st.split('dhanu'))
+  print(st.split('dhanu'))
 
 32. When would you use splitlines()?
 
-st3 = "This is a python lesson.\nStudying everyday.\nAnd practising."
-st3.splitlines()
+  st3 = "This is a python lesson.\nStudying everyday.\nAnd practising."
+  st3.splitlines()
 
 33. Join a list of strings into a single string, delimited by hyphens?
 
-print('-'.join(['a', 'b', 'c'])
+  print('-'.join(['a', 'b', 'c'])
 
 34. What is an f-string and how do you use it?
 
-New in python 3.6, f-strings make string interpolation really easy. Using f-strings is similar to using format(). F-strings are denoted by an f before the opening quote.
-name = 'Chris'
-food = 'creme brulee'
-f'Hello. My name is {name} and I like {food}.'
-#=> 'Hello. My name is Chris and I like creme brulee'
+  New in python 3.6, f-strings make string interpolation really easy. Using f-strings is similar to using format(). F-strings are denoted by an f before the opening quote.
+  name = 'Chris'
+  food = 'creme brulee'
+  f'Hello. My name is {name} and I like {food}.'
+  #=> 'Hello. My name is Chris and I like creme brulee'
 
 35. Interpolate a variable into a string using format()?
 
-print('This is {}'.format(st1))
+  print('This is {}'.format(st1))
 
 36. Can an integer be added to a string?
 
-NO
-st1 + 10 -> TypeError
+  NO
+  st1 + 10 -> TypeError
 
 37. Return the first matching substring in the given string?
 
-st.rfind('dhanu')
+  st.rfind('dhanu')
 
 38. Reverse the string "hello world"
 
-''.join(my_own_func_covert_str_to_list_and_reverse("hello world"))
+  ''.join(my_own_func_covert_str_to_list_and_reverse("hello world"))
