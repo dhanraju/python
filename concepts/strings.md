@@ -5,45 +5,45 @@ st_numbers = '123456789'
 
 1. What does it means for strings to be immutable in python?
 
-Once a string object has been created, it cannot be changed. Modifying that string creates a whole new object in memory. The concept is proved using id() function.
+   Once a string object has been created, it cannot be changed. Modifying that string creates a whole new object in memory. The concept is proved using id() function.
 
-1. Does defining a string twice creates one or two objects in memory?
+2. Does defining a string twice creates one or two objects in memory?
 
-It only creates one. This helps python save memory when dealing with large strings.
-eg:
-animal = 'dog'
-pet = 'dog'
-print(id(animal))
-print(id(pet))
+   It only creates one. This helps python to save memory when dealing with large strings.
+   eg:
+   animal = 'dog'
+   pet = 'dog'
+   print(id(animal))
+   print(id(pet))
 
-both returns the save value.
+   both returns the same value.
 
 
-1. Confirm that 2 strings have the same identity?
+3. Confirm that 2 strings have the same identity?
 
-st1 = "dhanu"
-st2 = "Dhanu"
-st3 = "dhanu"
-st4 = "dhanu1"
-st5 = "    This is dhanu.     "
+   st1 = "dhanu"
+   st2 = "Dhanu"
+   st3 = "dhanu"
+   st4 = "dhanu1"
+   st5 = "    This is dhanu.     "
 
-print(st1 == st3)
+   print(st1 == st3)
 
-1. Count the total number of characters in a string?
+4. Count the total number of characters in a string?
 
-print(len(st)
+   print(len(st)
 
-12. Check if a string contains a specific substring?
+5. Check if a string contains a specific substring?
 
-print(st1 in st)
+   print(st1 in st)
 
-13. Find the index of first occurrence of a substring in a string? If substring is "dhanu"
+6. Find the index of first occurrence of a substring in a string? If substring is "dhanu"
 
-print(st.find(st1))
+   print(st.find(st1))
 
-14. Count the number of a specific character in a string?
+7. Count the number of a specific character in a string?
 
-print(st.count('a'))
+   print(st.count('a'))
 
 15. Check if a string contains only numbers?
 
