@@ -3,11 +3,11 @@
 st = "This is dhanu and dhanu is learning python!"
 st_numbers = '123456789'
 
-8. What does it means for strings to be immutable in python?
+1. What does it means for strings to be immutable in python?
 
 Once a string object has been created, it cannot be changed. Modifying that string creates a whole new object in memory. The concept is proved using id() function.
 
-9. Does defining a string twice creates one or two objects in memory?
+1. Does defining a string twice creates one or two objects in memory?
 
 It only creates one. This helps python save memory when dealing with large strings.
 eg:
@@ -19,7 +19,7 @@ print(id(pet))
 both returns the save value.
 
 
-10. Confirm that 2 strings have the same identity?
+1. Confirm that 2 strings have the same identity?
 
 st1 = "dhanu"
 st2 = "Dhanu"
@@ -29,7 +29,7 @@ st5 = "    This is dhanu.     "
 
 print(st1 == st3)
 
-11. Count the total number of characters in a string?
+1. Count the total number of characters in a string?
 
 print(len(st)
 
