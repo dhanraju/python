@@ -91,7 +91,7 @@ A class is immutable if each object of that class has a fixed value upon instant
   </tr>
 </table>
 
-set and frozenset classes:
+**set and frozenset classes:**
 
 set class represents the mathemtical notion of a set, namely a collection of elements, without duplicates and without an inherent order to those elsements.
 
