@@ -92,7 +92,8 @@ def sum_of_odd_squares_using_comp(n):
 # such as a string. If string s has length n, and expression s[k] is used for
 # index −n ≤ k < 0, what is the equivalent index j ≥ 0 such that s[j] references
 # the same element?
-
+def string_index(data, index_k):
+  return index_k + len(data)
 
 # R-1.9 What parameters should be sent to the range constructor, to produce a
 # range with values 50, 60, 70, 80?
@@ -104,7 +105,8 @@ def sum_of_odd_squares_using_comp(n):
 
 # R-1.11 Demonstrate how to use Python’s list comprehension syntax to produce
 # the list [1, 2, 4, 8, 16, 32, 64, 128, 256].
-
+def demo_list_compre(list_len):
+  print([ 2**i for i in range(0, list_len) ])
 
 # R-1.12 Python’s random module includes a function choice(data) that returns a
 # random element from a non-empty sequence. The random module in-
@@ -121,7 +123,11 @@ def sum_of_odd_squares_using_comp(n):
 # integers, so that the numbers are listed in the opposite order than they
 # were before, and compare this method to an equivalent Python function
 # for doing the same thing.
-
+# Pseudo-code
+# Create an empty list variable called reversed_list.
+# Access the given_list variable using negative indexing and append each value
+# in the reversed_list.
+# reversed_list = [given_list[-i] for i in range(1, len(given_list)+1)]
 
 # C-1.14 Write a short Python function that takes a sequence of integer values
 # and determines if there is a distinct pair of numbers in the sequence whose
@@ -143,8 +149,8 @@ def sum_of_odd_squares_using_comp(n):
 # C-1.17 Had we implemented the scale function (page 25) as follows, does it
 # work properly?
 # def scale(data, factor):
-# for val in data:
-# val = factor
+#   for val in data:
+#     val = factor
 # Explain why or why not.
 
 
@@ -280,3 +286,12 @@ def sum_of_odd_squares_using_comp(n):
 # white space, and outputs how many times each word appears in the list. You
 # need not worry about efﬁciency at this point, however, as this topic is
 # something that will be addressed later in this book.
+
+
+def main():
+    is_multiple(2, 6)
+    # is_multiple(2, 5)
+
+
+if __name__ == '__main__':
+    main()
