@@ -161,3 +161,8 @@
                                  |                             
    dhanuhangout                  -----------------------------*----->*
    ~~~~
+
+
+**Pylint for Google python style**
+
+Ref: https://google.github.io/styleguide/pyguide.html
