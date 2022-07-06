@@ -9,3 +9,9 @@ py_test(
     srcs = ["ch01_exercises_test.py",],
     deps = [":ch01_exercises",],
 )
+
+py_test(
+    name = "ch01_exercises_gtest_test",
+    srcs = ["ch01_exercises_gtest_test.py",],
+    deps = [":ch01_exercises",],
+)

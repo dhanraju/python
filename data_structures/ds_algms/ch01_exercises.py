@@ -123,7 +123,7 @@ def demo_list_compre(list_len):
 # integers, so that the numbers are listed in the opposite order than they
 # were before, and compare this method to an equivalent Python function
 # for doing the same thing.
-# Pseudo-code
+# Solution: Pseudo-code
 # Create an empty list variable called reversed_list.
 # Access the given_list variable using negative indexing and append each value
 # in the reversed_list.
@@ -132,10 +132,23 @@ def demo_list_compre(list_len):
 # C-1.14 Write a short Python function that takes a sequence of integer values
 # and determines if there is a distinct pair of numbers in the sequence whose
 # product is odd.
+# Solution:
 
 
 # C-1.15 Write a Python function that takes a sequence of numbers and determines
 # if all the numbers are different from each other (that is, they are distinct).
+def is_distinct(data):
+  temp_dict = {}
+  for i in data:
+    print(i, temp_dict)
+    if str(i) in temp_dict:
+      print('Not a distinct')
+      return False
+    else:
+      temp_dict.update({f'{i}': ''})
+  print('The given sequence is distinct.')
+  return True
+
 
 
 # C-1.16 In our implementation of the scale function (page 25), the body of the
@@ -156,12 +169,14 @@ def demo_list_compre(list_len):
 
 # C-1.18 Demonstrate how to use Python’s list comprehension syntax to produce
 # the list [0, 2, 6, 12, 20, 30, 42, 56, 72, 90].
-
+def demo_list_comp(n):
+  [i*(i+1) for i in range(n)]
 
 # C-1.19 Demonstrate how to use Python’s list comprehension syntax to produce
 # the list [ a , b , c , ..., z ], but without having to type all 26 such
 # characters literally.
-
+def demo_list_comp_alphabets():
+  return [chr(i) for i in range(97, 123)]
 
 # C-1.20 Python’s random module includes a function shuﬄe(data) that accepts a
 # list of elements and randomly reorders the elements so that each possi-
@@ -191,6 +206,12 @@ def demo_list_compre(list_len):
 
 # C-1.24 Write a short Python function that counts the number of vowels in a
 # given character string.
+def count_vowels(string_data):
+  count = 0
+  for i in list(string_data):
+    if i in ['a', 'e', 'i', 'o', 'u']:
+      count += 1
+  return count
 
 
 # C-1.25 Write a short Python function that takes a string s, representing a

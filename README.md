@@ -166,3 +166,10 @@
 **Pylint for Google python style**
 
 Ref: https://google.github.io/styleguide/pyguide.html
+
+
+**Install googletest**
+Ref: https://github.com/google/googletest/tree/main/googletest
+
+**cmake install**
+https://askubuntu.com/questions/610291/how-to-install-cmake-3-2-on-ubuntu
