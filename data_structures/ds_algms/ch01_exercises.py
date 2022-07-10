@@ -216,14 +216,28 @@ def count_vowels(string_data):
 
 # C-1.25 Write a short Python function that takes a string s, representing a
 # sentence, and returns a copy of the string with all punctuation removed. For
-# example, if given the string "Let s try, Mike.", this function would return
+# example, if given the string "Let\'s try, Mike.", this function would return
 # "Lets try Mike".
-
+def remove_punctuation(string_data):
+  temp_string = ""
+  for i in list(st):
+    if i in string.ascii_uppercase or i in string.ascii_lowercase or i == ' ':
+      temp_string = temp_string + i
+  print(temp_string)
+  return temp_string
 
 # C-1.26 Write a short program that takes as input three integers, a, b, and c,
 # from the console and determines if they can be used in a correct arithmetic
 # formula (in the given order), like “a + b = c,” “a = b − c,” or “a ∗ b = c.”
-
+def arith_formula(a, b, c):
+  if (a+b == c) and (b-c == a) and (a*b == c):
+    print(
+      'The given input a= %d b=%d and c=%d is a correct arithmetic formula' % (
+        a, b, c))
+  else:
+    print(
+      'The given input a= %d b=%d and c=%d is NOT an correct arith formula' % (
+        a, b, c))
 
 # C-1.27 In Section 1.8, we provided three different implementations of a
 # generator that computes factors of a given integer. The third of those

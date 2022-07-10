@@ -10,8 +10,21 @@ py_test(
     deps = [":ch01_exercises",],
 )
 
+# Not working
+# py_test(
+#    name = "ch01_exercises_gtest_test",
+#    srcs = ["ch01_exercises_gtest_test.py",],
+#    deps = [":ch01_exercises",],
+# )
+
+py_binary(
+    name = "ch02_oops",
+    srcs = ["ch02_oops.py",],
+    main = "ch02_oops.py",
+)
+
 py_test(
-    name = "ch01_exercises_gtest_test",
-    srcs = ["ch01_exercises_gtest_test.py",],
-    deps = [":ch01_exercises",],
+    name = "ch02_oops_test",
+    srcs = ["ch02_oops_test.py",],
+    deps = [":ch02_oops",],
 )
