@@ -66,6 +66,8 @@ def main():
     my_card = CreditCard('John Bowman', 'California Savings',
                          '5391 0375 9387 5309', 2500)
     print("*** Customer name = %s ***" % my_card.get_customer())
+    print("*** Bank name = %s ***" % my_card.get_bank())
+
 
 
 if __name__ == '__main__':
