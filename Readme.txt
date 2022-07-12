@@ -10,11 +10,13 @@ How to install tools:
 1. Git:
 TODO: Need to update this ;-).
 
-2. Pytest:
+2. sudo apt-get install pip  # For pytest package installation
+
+3. Pytest:
 pip install -U pytest
 sudo pip install -U pytest
 
-3. Pylint:
+4. Pylint:
 sudo apt-get install pylint
 python coding standards explained here: https://www.python.org/dev/peps/pep-0008/
 

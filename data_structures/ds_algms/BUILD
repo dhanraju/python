@@ -28,3 +28,9 @@ py_test(
     srcs = ["ch02_oops_test.py",],
     deps = [":ch02_oops",],
 )
+
+py_binary(
+    name = "ch02_op_overlo_vector",
+    srcs = ["ch02_op_overlo_vector.py",],
+    main = "ch02_op_overlo_vector.py",
+)
