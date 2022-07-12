@@ -20,20 +20,20 @@ class Vector:
 
   def __len__(self):  # operator overloading.
     """Return the dimension of the vector."""
-    return len(self.__coords)
+    print('*** __len__')
+    return len(self._coords)
 
-  def __getitem__(self):
+  def __getitem__(self, j):
     """Return jth coordinate of vector."""
     return self._coords[j]
 
   def __setitem__(self, j, val):
     """Set jth coordinate of vector to a given value."""
     print('*** j = %d, val = %d' % (j, val))
-    self.__coords[j] = val
+    self._coords[j] = val
 
   def __add__(self, other):
     """Returns sum of two vectors."""
-    print('*** Add vectors ***')
     if len(self) != len(other):  # relies on existing __len__ method
       raise ValueError('dimensions must agree')
     result = Vector(len(self))
@@ -44,7 +44,7 @@ class Vector:
 
   def __eq__(self, other):
     """Return True if vector has some coordinates as other."""
-    return self._coords == other.__coords
+    return self._coords == other._coords
 
   def __ne__(self, other):
     """Return True if vector differs from other."""
@@ -60,21 +60,14 @@ if __name__ == '__main__':
   vector_a = Vector(vector_dimension)
   vector_b = Vector(vector_dimension)
   print('*** vector_a = ', vector_a)
-  j = 0
-  vector_a[0] = 5
-  vector_a[1] = -2
-  vector_a[2] = 3
-  vector_b[0] = 1
-  vector_b[1] = 4
-  vector_b[2] = 2
+  j = k = 0
   print('*** vector_a + vector_b = ', vector_a + vector_b)
-  # for val in (5, -2, 3):
-  #  vector_a.__setitem__(j, val)
-  #  j += 1
-  # print('Values of Vector a = ', vector_a)
-    
-  # k = 0
-  # for val in (1, 4, 2):
-  #   vector_a.__setitem__(k, val)
-  #  k += 1
-  # print('Values of Vector b = ', vector_b)
+  for val in (5, -2, 3):
+    vector_a.__setitem__(j, val)
+    j += 1
+  print('Values of Vector a = ', vector_a)
+  
+  for val in (1, 4, 2):
+    vector_a.__setitem__(k, val)
+    k += 1
+  print('Values of Vector b = ', vector_b)
