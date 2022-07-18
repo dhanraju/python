@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-set -e
+# set -e
 
-# . ~/.virtualenvs/python3/bin/activate
+. ~/.virtualenvs/python3/bin/activate
 
 rm -f pep8.log pyflakes.log
 
