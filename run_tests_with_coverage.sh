@@ -1,9 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
+# #!/usr/bin/env bash
 # set -e
 
 # . ~/.virtualenvs/python3/bin/activate
 
-# virtualenv testenv -p /usr/bin/python3
+virtualenv testenv -p /usr/bin/python3
 
 whoami
 
