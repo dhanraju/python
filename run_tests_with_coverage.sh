@@ -1,5 +1,5 @@
-#!/bin/bash
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
+# #!/bin/bash
 # set -e
 
 # . ~/.virtualenvs/python3/bin/activate
