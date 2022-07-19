@@ -3,7 +3,7 @@
 
 # . ~/.virtualenvs/python3/bin/activate
 
-virtualenv testenv -p /usr/bin/python3
+# virtualenv testenv -p /usr/bin/python3
 
 rm -f pep8.log pyflakes.log
 
