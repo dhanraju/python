@@ -5,6 +5,8 @@
 
 # virtualenv testenv -p /usr/bin/python3
 
+whoami
+
 rm -f pep8.log pyflakes.log
 
 PYTHONPATH=. python -m coverage run number_system_xmlrunner.py
