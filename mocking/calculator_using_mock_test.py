@@ -5,7 +5,7 @@ import sys
 import unittest
 from unittest.mock import patch
 # from unittest import TestCase
-from calculator import Calculator
+from mocking.calculator import Calculator
 # from mock import Calculator
 
 CURR_DIR = '%s' % os.getcwd()

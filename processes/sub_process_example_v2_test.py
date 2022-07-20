@@ -20,7 +20,7 @@ class TestProcessLogging(TestCase):
     def Logger(cls, que, proc, log_file):
         # time.sleep(3)
         for line in iter(proc.stdout.readline,''):
-            print line.rstrip()
+            print(line.rstrip())
             set_flag_true = True
             que.put(set_flag_true)
 

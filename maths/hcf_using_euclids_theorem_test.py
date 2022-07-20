@@ -1,5 +1,5 @@
 """Tests for hcf_using_euclids_theorem."""
-import hcf_using_euclids_theorem
+from maths import hcf_using_euclids_theorem
 import unittest
 import xmlrunner
 

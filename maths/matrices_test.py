@@ -1,5 +1,5 @@
 """Tests for Matrices."""
-import matrices
+from maths import matrices
 import unittest
 import xmlrunner
 

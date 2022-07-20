@@ -1,4 +1,4 @@
-import helloworld
+from unit_testing import helloworld
 import unittest
 
 class TwoClassesTestBase(object):

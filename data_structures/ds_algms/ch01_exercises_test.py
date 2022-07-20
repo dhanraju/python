@@ -1,4 +1,4 @@
-import ch01_exercises
+from data_structures.ds_algms import ch01_exercises
 import unittest
 
 

@@ -1,4 +1,4 @@
-import number_system
+from maths import number_system
 import unittest
 
 class TestNumberSystemConversion(unittest.TestCase):

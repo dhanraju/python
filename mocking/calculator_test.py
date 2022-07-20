@@ -3,7 +3,7 @@ import os
 import sys
 
 import unittest
-from calculator import Calculator
+from mocking.calculator import Calculator
 
 CURR_DIR = '%s' % os.getcwd()
 

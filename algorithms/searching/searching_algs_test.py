@@ -1,4 +1,4 @@
-import searching_algs
+from algorithms.searching import searching_algs
 import unittest
 
 class TestSearchingAlgs(unittest.TestCase):

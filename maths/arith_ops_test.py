@@ -1,5 +1,5 @@
 import unittest
-from arith_ops import ArithOps
+from maths.arith_ops import ArithOps
 
 class ArithOpsTest(unittest.TestCase):
   def setUp(self):

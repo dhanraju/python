@@ -22,7 +22,7 @@ def Logger(proc, log_file):
     # log_file.write(message)
     # log_file.write( sys.stdout)
     for line in iter(proc.stdout.readline,''):
-        print line.rstrip()
+        print(line.rstrip())
 
 class TestProcessLogging(TestCase):
     """Test module to test sorting techniques."""

@@ -10,8 +10,8 @@ C_DIR = os.getcwd()
 SRC_DIR = '%s/../programs/' % C_DIR
 
 sys.path.append(SRC_DIR)
-import factorial as FactObj
-import fibonacci as FiboObj
+from practise.programs import factorial as FactObj
+from practise.programs import fibonacci as FiboObj
 
 def test_factorial():
     """Tests factorial of a number."""
