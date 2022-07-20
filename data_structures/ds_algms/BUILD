@@ -42,7 +42,13 @@ py_test(
 )
 
 py_binary(
-    name = "ch02_iterators",
-    srcs = ["ch02_iterators.py",],
-    main = "ch02_iterators.py",
+    name = "ch02_op_overlo_iterators",
+    srcs = ["ch02_op_overlo_iterators.py",],
+    main = "ch02_op_overlo_iterators.py",
+)
+
+py_test(
+    name = "ch02_op_overlo_iterators_test",
+    srcs = ["ch02_op_overlo_iterators_test.py",],
+    deps = [":ch02_op_overlo_iterators",],
 )

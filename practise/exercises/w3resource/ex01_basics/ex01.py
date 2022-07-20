@@ -18,7 +18,7 @@ def prog001(input_string):
     # Convert input string to the given format.
     # Algorithm:
     # * Split the string into new lines when capital letters are found.
-    # * Exclude I while splitting the string to lines.
+    # * Exclude character I; while splitting the string to new lines.
     # * Add 8 spaces at the beginning of the new line.
     # * Add 16 spaces at the beginning of the new line from line 3 to remaining
     #   lines.
