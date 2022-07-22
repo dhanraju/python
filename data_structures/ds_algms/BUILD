@@ -52,3 +52,15 @@ py_test(
     srcs = ["ch02_op_overlo_iterators_test.py",],
     deps = [":ch02_op_overlo_iterators",],
 )
+
+py_binary(
+    name = "ch02_op_overlo_range",
+    srcs = ["ch02_op_overlo_range.py",],
+    main = "ch02_op_overlo_range.py",
+)
+
+py_test(
+    name = "ch02_op_overlo_range_test",
+    srcs = ["ch02_op_overlo_range_test.py",],
+    deps = [":ch02_op_overlo_range",],
+)
