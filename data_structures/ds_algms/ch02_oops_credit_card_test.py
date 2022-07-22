@@ -1,6 +1,6 @@
 """Test cases for chapter02 program of credit card module."""
 import unittest
-from data_structures.ds_algms.ch02_oops import CreditCard
+from data_structures.ds_algms.ch02_oops_credit_card import CreditCard
 
 class TestCh02CreditCard(unittest.TestCase):
   """Unit test cases for the module CreditCard."""
