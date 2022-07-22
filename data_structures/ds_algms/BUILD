@@ -18,15 +18,15 @@ py_test(
 # )
 
 py_binary(
-    name = "ch02_oops",
-    srcs = ["ch02_oops.py",],
-    main = "ch02_oops.py",
+    name = "ch02_oops_credit_card",
+    srcs = ["ch02_oops_credit_card.py",],
+    main = "ch02_oops_credit_card.py",
 )
 
 py_test(
-    name = "ch02_oops_test",
-    srcs = ["ch02_oops_test.py",],
-    deps = [":ch02_oops",],
+    name = "ch02_oops_credit_card_test",
+    srcs = ["ch02_oops_credit_card_test.py",],
+    deps = [":ch02_oops_credit_card",],
 )
 
 py_binary(
