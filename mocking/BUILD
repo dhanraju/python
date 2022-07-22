@@ -2,17 +2,18 @@
 
 py_binary(
     name = "calculator_app",
-    srcs = ["calculator.py"],
+    srcs = ["calculator.py",],
     main = "calculator.py",
 )
 
 py_test(
-    name = "test_calculator",
-    srcs = ["test_calculator.py"],
-    deps = ["calculator_app"],
+    name = "calculator_test",
+    srcs = ["calculator_test.py",],
+    deps = [":calculator_app"],
 )
 
 py_test(
     name = "calculator_using_mock_test",
-    srcs = ["calculator_using_mock_test.py"],
+    srcs = ["calculator_using_mock_test.py",],
+    deps = [":calculator_app"],
 )

@@ -4,7 +4,6 @@ import sys
 
 import unittest
 from unittest.mock import patch
-# from unittest import TestCase
 from mocking.calculator import Calculator
 # from mock import Calculator
 
@@ -16,13 +15,13 @@ sys.path.append(CURR_DIR)
 class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
 
-    @patch('.Calculator.add', return_value=9)
+    @patch('mocking.calculator.Calculator.add', return_value=6)
     def test_sum(self, add):
         '''Test sum operation.'''
         self.assertEqual(add(2, 3), 6)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
 
 # Ref:
