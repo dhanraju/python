@@ -64,3 +64,22 @@ py_test(
     srcs = ["ch02_op_overlo_range_test.py",],
     deps = [":ch02_op_overlo_range",],
 )
+
+py_binary(
+    name = "ch02_op_inherit_credit_card",
+    srcs = ["ch02_op_inherit_credit_card.py",],
+    main = "ch02_op_inherit_credit_card.py",
+    deps = [":ch02_oops_credit_card"],
+)
+
+# py_test(
+#    name = "ch02_op_inherit_credit_card_test",
+#    srcs = ["ch02_op_inherit_credit_card_test.py",],
+#    deps = [":ch02_op_inherit_credit_card",],
+# )
+
+py_binary(
+    name = "ch02_op_inherit_progression",
+    srcs = ["ch02_op_inherit_progression.py",],
+    main = "ch02_op_inherit_progression.py",
+)
