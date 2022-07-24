@@ -41,3 +41,4 @@ class Progression:
 if __name__ == '__main__':
     prog_obj = Progression(2)
     prog_obj.print_progression(6)
+    # Output: 2 3 4 5 6 7

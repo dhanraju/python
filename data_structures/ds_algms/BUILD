@@ -83,3 +83,24 @@ py_binary(
     srcs = ["ch02_op_inherit_progression.py",],
     main = "ch02_op_inherit_progression.py",
 )
+
+py_binary(
+    name = "ch02_op_inherit_arith_prog",
+    srcs = ["ch02_op_inherit_arith_prog.py",],
+    main = "ch02_op_inherit_arith_prog.py",
+    deps = [":ch02_op_inherit_progression",],
+)
+
+py_binary(
+    name = "ch02_op_inherit_geom_prog",
+    srcs = ["ch02_op_inherit_geom_prog.py",],
+    main = "ch02_op_inherit_geom_prog.py",
+    deps = [":ch02_op_inherit_progression",],
+)
+
+py_binary(
+    name = "ch02_op_inherit_fibo_prog",
+    srcs = ["ch02_op_inherit_fibo_prog.py",],
+    main = "ch02_op_inherit_fibo_prog.py",
+    deps = [":ch02_op_inherit_progression",],
+)
