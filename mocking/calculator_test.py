@@ -12,9 +12,10 @@ sys.path.append(CURR_DIR)
 
 class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
-    def setUp(self):
-        self.calc = Calculator()
+    # def setUp(self):
+    #    self.calc = Calculator()
 
+    @patch('main.Calculator.sum', return_value=6)
     def test_sum(self):
         '''Test sum operation.'''
         answer = self.calc.add(2, 4)
