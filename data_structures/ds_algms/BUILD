@@ -23,11 +23,10 @@ py_binary(
     main = "ch02_oops_credit_card.py",
 )
 
-py_test(
-    name = "ch02_oops_credit_card_test",
-    srcs = ["ch02_oops_credit_card_test.py",],
-    deps = [":ch02_oops_credit_card",],
-)
+# py_test(
+#  srcs = ["ch02_oops_credit_card_test.py",],
+#    deps = [":ch02_oops_credit_card",],
+# )
 
 py_binary(
     name = "ch02_op_overlo_vector",
@@ -103,4 +102,10 @@ py_binary(
     srcs = ["ch02_op_inherit_fibo_prog.py",],
     main = "ch02_op_inherit_fibo_prog.py",
     deps = [":ch02_op_inherit_progression",],
+)
+
+py_binary(
+    name = "ch04ch04_recur_facto",
+    srcs = ["ch04_recur_facto.py",],
+    main = "ch04_recur_facto.py",
 )
