@@ -2,10 +2,9 @@
 import os
 import sys
 
+from calculator import Calculator
 import unittest
 from unittest.mock import patch
-from mocking.calculator import Calculator
-# from mock import Calculator
 
 CURR_DIR = '%s' % os.getcwd()
 
@@ -15,10 +14,9 @@ sys.path.append(CURR_DIR)
 class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
 
-    @patch('mocking.calculator.Calculator.add', return_value=6)
+    @patch('mocking.calculator.Calculator.add', return_value=5)
     def test_sum(self, add):
-        '''Test sum operation.'''
-        self.assertEqual(add(2, 3), 6)
+        self.assertEqual(add(2, 3), 5)
 
 
 if __name__ == "__main__":
