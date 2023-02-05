@@ -4,6 +4,8 @@
 
 # . ~/.virtualenvs/python3/bin/activate
 
+pip3 install virtualenv
+
 whereis virtualenv
 
 virtualenv testenv -p /usr/bin/python3
