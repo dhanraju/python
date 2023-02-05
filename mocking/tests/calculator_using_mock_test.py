@@ -5,7 +5,7 @@ import sys
 CURR_DIR = '%s' % os.getcwd()
 sys.path.append(CURR_DIR)
 
-from calculator import Calculator
+from mocking.calculator import Calculator
 import unittest
 from unittest.mock import patch
 
