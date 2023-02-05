@@ -2,7 +2,7 @@
 import os
 import sys
 
-from calculator import Calculator
+from . import calculator
 import unittest
 from unittest.mock import patch
 
