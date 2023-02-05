@@ -2,18 +2,17 @@
 import os
 import sys
 
-from . import calculator as calc
-import unittest
-
 CURR_DIR = '%s' % os.getcwd()
-
 sys.path.append(CURR_DIR)
+
+from calculator import Calculator
+import unittest
 
 
 class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
     def setUp(self):
-        self.calc = calc.Calculator()
+        self.calc = Calculator()
 
     def test_sum(self):
         '''Test sum operation.'''

@@ -2,13 +2,12 @@
 import os
 import sys
 
-from . import calculator
+CURR_DIR = '%s' % os.getcwd()
+sys.path.append(CURR_DIR)
+
+from calculator import Calculator
 import unittest
 from unittest.mock import patch
-
-CURR_DIR = '%s' % os.getcwd()
-
-sys.path.append(CURR_DIR)
 
 
 class TestCalculator(unittest.TestCase):
