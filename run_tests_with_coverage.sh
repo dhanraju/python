@@ -4,6 +4,8 @@
 
 # . ~/.virtualenvs/python3/bin/activate
 
+whereis virtualenv
+
 virtualenv testenv -p /usr/bin/python3
 
 whoami
