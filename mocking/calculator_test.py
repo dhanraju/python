@@ -2,7 +2,7 @@
 import os
 import sys
 
-from calculator import Calculator
+from . import calculator as calc
 import unittest
 
 CURR_DIR = '%s' % os.getcwd()
@@ -13,7 +13,7 @@ sys.path.append(CURR_DIR)
 class TestCalculator(unittest.TestCase):
     '''Test Calculator module.'''
     def setUp(self):
-        self.calc = Calculator()
+        self.calc = calc.Calculator()
 
     def test_sum(self):
         '''Test sum operation.'''
