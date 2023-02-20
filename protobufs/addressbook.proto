@@ -1,11 +1,15 @@
-syntax = "proto3";
+syntax = "proto2";
 
+// Start with a package declaration to prevent naming conflicts between
+// different projects.
 package tutorial;
 
+// Define message:
+// A message is just an aggregate containing a set of typed files.
 message Person {
-    string name = 1;
-    int32 id = 2;
-    string email = 3;
+    required string name = 1;
+    required int32 id = 2;
+    required string email = 3;
 
     enum PhoneType {
       MOBILE = 0;
@@ -13,14 +17,30 @@ message Person {
       WORK = 2;
     }
 
+    // message types can also be added as filed types. Also called nested
+    // messages.
     message PhoneNumber {
-      string number = 1;
-      PhoneType type =2 [default = HOME];
+      // field - optional: may or may not set. If not set, either a default
+      // value is used Or a system default is used : zero for numeric types,
+      // the empty string for strings, false for bools. For embedded messages,
+      // the default values is always the default instance or prototype of  the
+      // message, which has none of its fields set.
+      optional string number = 1;
+      // Specify a default value for the optional field.
+      optional PhoneType type = 2 [default = HOME];
     }
 
+    // field repeated: the field may be repeated any number of times
+    // (including zero). The order of repeated values will be preserved.
+    // Think of repeated fields as dynamically sized arrays.
     repeated PhoneNumber phones = 4;
 }
 
 message AddressBook {
     repeated Person people = 1;
 }
+
+
+// Compiling the protobuf.
+// protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/addressbook.proto
+// The command generates addressbook_pb3.py in specified destination directory.
