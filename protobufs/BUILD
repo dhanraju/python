@@ -6,10 +6,10 @@ load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
 
 package(default_visibility = ["//visibility:public"])
 
-proto_library(
-    name = "addressbook_proto",
-    srcs = ["addressbook.proto"],
-)
+# proto_library(
+#    name = "addressbook_proto",
+#    srcs = ["addressbook.proto"],
+# )
 
 py_proto_library(
     name = "addressbook_py_pb2",
