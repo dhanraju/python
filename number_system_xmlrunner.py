@@ -15,6 +15,7 @@ def find_tests():
 	# folders_list = os.path.dirname(os.path.abspath(__file__))
 	folders_list = os.path.dirname(__file__)
 	print(folders_list)
+	print(unittest.TestLoader().discover(folders_list, pattern="*_test.py"))
 	return unittest.TestLoader().discover(folders_list, pattern="*_test.py")
 
 if __name__ == '__main__':
