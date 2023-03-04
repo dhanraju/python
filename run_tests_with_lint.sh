@@ -6,7 +6,7 @@ set -x
 
 rm -f pep8.log pyflakes.log
 
-# ./number_system_xmlrunner.py
+./number_system_xmlrunner.py
 
 # Install pep8 tool.
 # $ sudo apt install pep8
