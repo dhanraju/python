@@ -9,3 +9,9 @@ py_test(
     srcs = ["nested_lists_test.py"],
     deps = [":nested_lists"]
 )
+
+py_binary(
+    name = "lists",
+    srcs = ["lists.py",],
+    main = "lists.py"
+)
