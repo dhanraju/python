@@ -6,8 +6,12 @@ set -x
 
 rm -f pep8.log pyflakes.log
 
-./test.py
+./number_system_xmlrunner.py
 
-pep8 --max-line-length=120 python > pep8.log || true
+# Install pep8 tool.
+# $ sudo apt install pep8
+pep8 --max-line-length=80 ./ > pep8.log || true
 
+# Install pyflakes tool.
+# $ pip install --upgrade pyflakes
 pyflakes python > pyflakes.log || true
