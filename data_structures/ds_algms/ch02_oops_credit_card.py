@@ -1,6 +1,6 @@
 """OOPS concepts."""
 
-class CreditCard:
+class CreditCard(object):
   """A consumer credit card."""
 
   def __init__(self, customer, bank, acnt, limit):
