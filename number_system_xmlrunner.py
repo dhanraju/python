@@ -5,7 +5,7 @@ import os
 import unittest
 import xmlrunner
 
-def runner(output="test-reports/TEST-*.xml"):
+def runner(output="test-reports"):
 	print("In runner.")
 	return xmlrunner.XMLTestRunner(output=output)
 
