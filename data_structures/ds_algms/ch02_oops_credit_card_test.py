@@ -1,19 +1,19 @@
 """Test cases for chapter02 program of credit card module."""
 import unittest
-from data_structures.ds_algms.ch02_oops_credit_card import CreditCard as CC
+from data_structures.ds_algms.ch02_oops_credit_card import CreditCard
 
 class TestCh02CreditCard(unittest.TestCase):
   """Unit test cases for the module CreditCard."""
   def setUp(self):
     self.wallet = []
     self.wallet.append(
-      CC('John Bowman', 'California Savings',
+      CreditCard('John Bowman', 'California Savings',
         '5391 0375 9387 5309', 2500))
     self.wallet.append(
-      CC('Dhan', 'California Federal',
+      CreditCard('Dhan', 'California Federal',
         '3485 0399 3395 1954', 91))
     self.wallet.append(
-      CC('Raj', 'California Finance',
+      CreditCard('Raj', 'California Finance',
         '5391 0375 9387 5309', 101))
 
   # Method coverage unit tests.
