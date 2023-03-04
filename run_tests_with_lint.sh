@@ -14,4 +14,4 @@ pep8 --max-line-length=80 ./ > pep8.log || true
 
 # Install pyflakes tool.
 # $ pip install --upgrade pyflakes
-pyflakes python > pyflakes.log || true
+pyflakes ./ > pyflakes.log || true
