@@ -39,3 +39,27 @@ py_test(
     srcs = ["tuples_hashing_test.py"],
     deps = [":tuples_hashing"]
 )
+
+py_binary(
+    name = "finding_percentage",
+    srcs = ["finding_percentage.py",],
+    main = "finding_percentage.py"
+)
+
+py_test(
+    name = "finding_percentage_test",
+    srcs = ["finding_percentage_test.py"],
+    deps = [":finding_percentage"]
+)
+
+py_binary(
+    name = "runner_up_score",
+    srcs = ["runner_up_score.py",],
+    main = "runner_up_score.py"
+)
+
+py_test(
+    name = "runner_up_score_test",
+    srcs = ["runner_up_score_test.py"],
+    deps = [":runner_up_score"]
+)
