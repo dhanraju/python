@@ -33,3 +33,15 @@ py_test(
     srcs = ["string_formatting_test.py"],
     deps = [":string_formatting"]
 )
+
+py_binary(
+    name = "capitalize",
+    srcs = ["capitalize.py"],
+    main = "capitalize.py"
+)
+
+py_test(
+    name = "capitalize_test",
+    srcs = ["capitalize_test.py"],
+    deps = [":capitalize"]
+)
