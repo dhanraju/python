@@ -21,3 +21,15 @@ py_test(
     srcs = ["split_and_join_test.py"],
     deps = [":split_and_join"]
 )
+
+py_binary(
+    name = "string_formatting",
+    srcs = ["string_formatting.py"],
+    main = "string_formatting.py"
+)
+
+py_test(
+    name = "string_formatting_test",
+    srcs = ["string_formatting_test.py"],
+    deps = [":string_formatting"]
+)
