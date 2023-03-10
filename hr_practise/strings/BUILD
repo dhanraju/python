@@ -45,3 +45,15 @@ py_test(
     srcs = ["capitalize_test.py"],
     deps = [":capitalize"]
 )
+
+py_binary(
+    name = "minion_game",
+    srcs = ["minion_game.py"],
+    main = "minion_game.py"
+)
+
+py_binary(
+    name = "merge_the_tools",
+    srcs = ["merge_the_tools.py"],
+    main = "merge_the_tools.py"
+)
