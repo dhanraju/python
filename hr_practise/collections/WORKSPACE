@@ -1,5 +1,0 @@
-py_binary(
-    name = "company_logo",
-    srcs = ["company_logo.py"],
-    main = "company_logo.py",
-)

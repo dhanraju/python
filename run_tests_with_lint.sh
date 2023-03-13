@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-. ~/.virtualenvs/python3/bin/activate
+pip3 install virtualenv
+
+whereis virtualenv
+
+virtualenv testenv -p /usr/bin/python3
+
+# . ~/.virtualenvs/python3/bin/activate
 set -e
 set -x
 
@@ -13,5 +19,5 @@ rm -f pep8.log pyflakes.log
 pep8 --max-line-length=80 ./ > pep8.log || true
 
 # Install pyflakes tool.
-# $ pip install --upgrade pyflakes
+# $ sudo pip install --upgrade pyflakes
 pyflakes ./ > pyflakes.log || true
