@@ -15,12 +15,12 @@ from practise.programs import fibonacci as FiboObj
 
 def test_factorial():
     """Tests factorial of a number."""
-    print("inside test_factorial")
+    # print("inside test_factorial")
     assert FactObj.factorial_of_num(4) == 24
 
 def test_fibonacci():
     """pytest to verify fibonacci series."""
-    print("inside test_fibonacci")
+    # print("inside test_fibonacci")
     assert FiboObj.fibonacci_series(5) == [0, 1, 1, 2, 3, 5]
 
 

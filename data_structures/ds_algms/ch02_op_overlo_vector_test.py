@@ -8,7 +8,8 @@ _VECTOR_3D = 3
 class OpOverLoVectorTest(unittest.TestCase):
   def setUp(self):
     # Initialize vector_a and vector_b with values and create resultant vector.
-    print("In setUp of OpOverLoVectorTest")
+    # print("In setUp of OpOverLoVectorTest")
+    pass
 
   def test_vector_init(self):
     vector_a = Vector(_VECTOR_3D)

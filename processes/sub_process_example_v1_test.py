@@ -30,7 +30,7 @@ class TestProcessLogging(TestCase):
     @classmethod
     def setup_class(cls):
         """Setup Class."""
-        print("\nsetup_class class:%s" % cls.__name__)
+        # print("\nsetup_class class:%s" % cls.__name__)
         temp_dir = tempfile.mkdtemp()
         temp_file_path = '%s/logger_%s.txt' % (
             temp_dir, time.strftime('%Y%m%d_%H%M%S'))
@@ -48,8 +48,8 @@ class TestProcessLogging(TestCase):
     @classmethod
     def teardown_class(cls):
         """Teardown Class."""
-        print("teardown_class class:%s" % cls.__name__)
-        print("Process id = %d" % cls.proc.pid)
+        # print("teardown_class class:%s" % cls.__name__)
+        # print("Process id = %d" % cls.proc.pid)
         '''while cls.proc.stdout.readline():
             print cls.proc.stdout.readline()'''
         cls.proc.kill()
