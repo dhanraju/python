@@ -8,12 +8,12 @@ class TestCH01Exercises(unittest.TestCase):
 
   def test_is_multiple_positive(self):
     status = ch01_exercises.is_multiple(2, 8)
-    print(status)
+    # print(status)
     assert status == True
 
   def test_is_multiple_negative(self):
     status = ch01_exercises.is_multiple(2, 7)
-    print(status)
+    # print(status)
     assert status == False
 
 

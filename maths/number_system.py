@@ -29,8 +29,8 @@ class Conversion(object):
         # TODO(dhanraju): Fix pylint error consider-using-enumerate.
         for i in range(len(i_value)):
             decimal_num += int(self.hexa_ns[i_value[i]]) * base**(len(i_value)-i-1)
-        print("Given number %s of base \'%d\' in decimal number is: %d" % (
-            i_value, base, decimal_num))
+        # print("Given number %s of base \'%d\' in decimal number is: %d" % (
+        #    i_value, base, decimal_num))
         return decimal_num
 
     def decimal_to_anybase(self, i_value, base):
@@ -39,18 +39,18 @@ class Conversion(object):
         converted_num = ''
         while base <= temp:
             # Retrieve appropriate dictionary key for a value.
-            print(self.hexa_ns.keys())
-            print(self.hexa_ns.values())
-            print(list(self.hexa_ns.keys())[4])
-            print(temp%base)
-            print(list(self.hexa_ns.values())[int(temp%base)])
+            # print(self.hexa_ns.keys())
+            # print(self.hexa_ns.values())
+            # print(list(self.hexa_ns.keys())[4])
+            # print(temp%base)
+            # print(list(self.hexa_ns.values())[int(temp%base)])
             position_value = list(self.hexa_ns.keys())[list(self.hexa_ns.values())[int(temp%base)]]
             converted_num = position_value + converted_num
             temp /= base
         position_value = list(self.hexa_ns.keys())[list(self.hexa_ns.values())[int(temp%base)]]
         converted_num = position_value + converted_num
-        print("Given decimal number %s in base \'%d\' is: %s" % (
-            i_value, base, converted_num))
+        # print("Given decimal number %s in base \'%d\' is: %s" % (
+        #    i_value, base, converted_num))
         return converted_num
 
     def octal_to_binary(self, i_value):
@@ -59,7 +59,8 @@ class Conversion(object):
         decimal_num = self.anybase_to_decimal(str(i_value), 8)
         # Convert decimal to binary.
         binary_num = self.decimal_to_anybase(decimal_num, 2)
-        print("Given octal number %s in binary is: %s" % (i_value, binary_num))
+        # print("Given octal number %s in binary is: %s" % (
+        # i_value, binary_num))
         return binary_num
 
     def hexa_to_binary(self, i_value):
@@ -68,7 +69,7 @@ class Conversion(object):
         decimal_num = self.anybase_to_decimal(str(i_value), 16)
         # Convert decimal to binary.
         binary_num = self.decimal_to_anybase(decimal_num, 2)
-        print("Given hexa number %s in binary is: %s" % (i_value, binary_num))
+        # print("Given hexa number %s in binary is: %s" % (i_value, binary_num))
         return binary_num
 
     def octal_to_hexa(self, i_value):
@@ -77,7 +78,7 @@ class Conversion(object):
         decimal_num = self.anybase_to_decimal(str(i_value), 8)
         # Convert decimal to hexa number.
         hexa_num = self.decimal_to_anybase(decimal_num, 16)
-        print("Given octal number %s in binary is: %s" % (i_value, hexa_num))
+        # print("Given octal number %s in binary is: %s" % (i_value, hexa_num))
         return hexa_num
 
     def hexa_to_octal(self, i_value):
@@ -86,12 +87,12 @@ class Conversion(object):
         decimal_num = self.anybase_to_decimal(str(i_value), 16)
         # Convert decimal to octal.
         octal_num = self.decimal_to_anybase(decimal_num, 8)
-        print("Given hexa number %s in octal is: %s" % (i_value, octal_num))
+        # print("Given hexa number %s in octal is: %s" % (i_value, octal_num))
         return octal_num
 
 
 if __name__ == '__main__':
-    print("Number system: Conversion demonstration.")
+    # print("Number system: Conversion demonstration.")
     NUM_SYSTEM_CONVERSION = Conversion()
     NUM_SYSTEM_CONVERSION.anybase_to_decimal('101101', 2)
     NUM_SYSTEM_CONVERSION.anybase_to_decimal('565', 8)

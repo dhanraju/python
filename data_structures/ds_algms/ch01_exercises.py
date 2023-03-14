@@ -17,9 +17,9 @@ def is_multiple(n, m):
   """
   # Check the given numbers are integer
   if m%n:
-    print('%d is NOT a multiple of %d' % (n, m))
+    # print('%d is NOT a multiple of %d' % (n, m))
     return False
-  print('%d is a multiple of %d' % (n, m))
+  # print('%d is a multiple of %d' % (n, m))
   return True
 
 # R-1.2 Write a short Python function, is even(k), that takes an integer value
@@ -37,9 +37,9 @@ def is_even(n):
   # Convert the integer value to binary value.
   # Check if the last char is '0' for even and '1' for odd.
   if int(bin(n)[-1]):
-    print('%d is NOT an even number' % n)
+    # print('%d is NOT an even number' % n)
     return False
-  print('%d is a even number' % n)
+  # print('%d is a even number' % n)
   return True
 
 
@@ -142,11 +142,11 @@ def is_distinct(data):
   for i in data:
     print(i, temp_dict)
     if str(i) in temp_dict:
-      print('Not a distinct')
+      # print('Not a distinct')
       return False
     else:
       temp_dict.update({f'{i}': ''})
-  print('The given sequence is distinct.')
+  # print('The given sequence is distinct.')
   return True
 
 
@@ -223,7 +223,7 @@ def remove_punctuation(string_data):
   for i in list(st):
     if i in string.ascii_uppercase or i in string.ascii_lowercase or i == ' ':
       temp_string = temp_string + i
-  print(temp_string)
+  # print(temp_string)
   return temp_string
 
 # C-1.26 Write a short program that takes as input three integers, a, b, and c,
