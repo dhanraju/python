@@ -30,12 +30,12 @@ class SequenceIterator:
         if self._k < len(self._seq):
             return(self._seq[self._k])
         else:
-            print('*** End of iteration. ***')
+            # print('*** End of iteration. ***')
             raise StopIteration()
 
     def __iter__(self):
         """By convention, an iterator must return itself as an iterator."""
-        print('*** In iter ***')
+        # print('*** In iter ***')
         return self
 
 

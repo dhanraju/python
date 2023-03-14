@@ -20,7 +20,7 @@ class Vector:
 
   def __len__(self):  # operator overloading.
     """Return the dimension of the vector."""
-    print('*** __len__')
+    # print('*** __len__')
     return len(self._coords)
 
   def __getitem__(self, j):
@@ -29,7 +29,7 @@ class Vector:
 
   def __setitem__(self, j, val):
     """Set jth coordinate of vector to a given value."""
-    print('*** j = %d, val = %d' % (j, val))
+    # print('*** j = %d, val = %d' % (j, val))
     self._coords[j] = val
 
   def __add__(self, other):
