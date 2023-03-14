@@ -106,7 +106,13 @@ py_binary(
 )
 
 py_binary(
-    name = "ch04ch04_recur_facto",
+    name = "ch04_recur_facto",
     srcs = ["ch04_recur_facto.py",],
     main = "ch04_recur_facto.py",
+)
+
+py_binary(
+    name = "ch04_recur_draw_ruler",
+    srcs = ["ch04_recur_draw_ruler.py",],
+    main = "ch04_recur_draw_ruler.py",
 )
