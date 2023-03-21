@@ -22,4 +22,5 @@ set -x
 # #$ sudo pip install --upgrade pyflakes
 # pyflakes ./ > pyflakes.log || true
 
-pylint --output-format=parseable --fail-under=9.5 --rcfile=pylint.cfg $(find . -maxdepth 5 -name "*.py" -print) --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" | tee pylint.log || echo "pylint exited with $?"' echo "Linting Success, Generating Report" recordIssues enabledForFailure: true, aggregatingResults: true, tool: pyLint(pattern: 'pylint.log')'
+# pylint --rcfile=pylint.cfg $(find . -maxdepth 5 -name "*.py" -print)  > pylint.log
+pylint --output-format=parseable --fail-under=9.5 --rcfile=pylint.cfg $(find . -maxdepth 5 -name "*.py") --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" | tee pylint.log || echo "pylint exited with $?" || echo "Linting Success, Generating Report" recordIssues enabledForFailure: true, aggregatingResults: true, tool: pyLint(pattern: 'pylint.log') || echo "failed"
