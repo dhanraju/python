@@ -7,7 +7,7 @@ def reverse_int(num):
     remainder = 0
     print(quotient)
     print(int(quotient/10))
-    while quotient > 10:
+    while quotient >= 10:
         remainder = quotient%10
         quotient = int(quotient/10)
         st = st+str(remainder)
