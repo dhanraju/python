@@ -1,3 +1,4 @@
+# Stack Implementation and applications.
 py_library(
     name = "stack_lib",
     srcs = ["stack.py",],
@@ -38,4 +39,31 @@ py_binary(
     name = "postfix_evaluation",
     srcs = ["postfix_evaluation.py",],
     main = "postfix_evaluation.py",
+)
+
+# Queue Implementation and applications.
+py_library(
+    name = "queue_lib",
+    srcs = ["queue.py",],
+)
+
+py_test(
+    name = "queue_lib_test",
+    srcs = ["queue_test.py",],
+    deps = [":queue_lib",],
+    main = "queue_test.py",
+)
+
+py_binary(
+    name = "hot_potato_problem",
+    srcs = ["hot_potato_problem.py",],
+    deps = [":queue_lib",],
+    main = "hot_potato_problem.py",
+)
+
+py_binary(
+    name = "printing_tasks",
+    srcs = ["printing_tasks.py",],
+    deps = [":queue_lib",],
+    main = "printing_tasks.py",
 )
