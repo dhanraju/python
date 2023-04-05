@@ -87,3 +87,16 @@ py_binary(
     deps = [":deque_lib",],
     main = "palindrome_checker.py",
 )
+
+# Lists
+py_library(
+    name = "unordered_lists_lib",
+    srcs = ["unordered_lists.py",],
+)
+
+py_test(
+    name = "unordered_lists_lib_test",
+    srcs = ["unordered_lists_test.py",],
+    deps = [":unordered_lists_lib",],
+    main = "unordered_lists_test.py",
+)
