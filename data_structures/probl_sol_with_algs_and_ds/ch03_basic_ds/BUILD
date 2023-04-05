@@ -67,3 +67,23 @@ py_binary(
     deps = [":queue_lib",],
     main = "printing_tasks.py",
 )
+
+# Dequeue Implementation and applications.
+py_library(
+    name = "deque_lib",
+    srcs = ["deque.py",],
+)
+
+py_test(
+    name = "deque_lib_test",
+    srcs = ["deque_test.py",],
+    deps = [":deque_lib",],
+    main = "deque_test.py",
+)
+
+py_binary(
+    name = "palindrome_checker",
+    srcs = ["palindrome_checker.py",],
+    deps = [":deque_lib",],
+    main = "palindrome_checker.py",
+)
