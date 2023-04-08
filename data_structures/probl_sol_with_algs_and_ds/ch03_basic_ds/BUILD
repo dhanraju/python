@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 # Stack Implementation and applications.
 py_library(
     name = "stack_lib",
