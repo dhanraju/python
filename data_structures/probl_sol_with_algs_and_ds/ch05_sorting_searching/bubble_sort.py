@@ -12,16 +12,20 @@ need to be compared on the first pass.
 def bubble_sort(given_list):
     """Bubble sort algorithm."""
     pass_num = 0
+    # Pass through all the elements in the list.
     for _ in range(len(given_list)-1):
+        # Compare adj elements from the beginning.
+        # Then leave the last sorted element for comparison.
         for i in range(len(given_list)-1-pass_num):
             if given_list[i] > given_list[i+1]:
+                # Swap the elements.
                 temp = given_list[i]
                 given_list[i] = given_list[i+1]
                 given_list[i+1] = temp
                 print(given_list)
         # The largest value should be placed in the right place. So ignore the
         # sorted values that are placed at the end of the list for traversal.
-        pass_num = pass_num + 1
+        pass_num = pass_num + 1  # Leave the last sorted element for comparison
     return given_list
 
 if __name__ == '__main__':

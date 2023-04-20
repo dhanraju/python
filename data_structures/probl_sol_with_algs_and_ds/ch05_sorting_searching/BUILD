@@ -28,3 +28,27 @@ py_binary(
     srcs = ["bubble_sort.py"],
     main = "bubble_sort.py",
 )
+
+py_binary(
+    name = "selection_sort",
+    srcs = ["selection_sort.py"],
+    main = "selection_sort.py",
+)
+
+py_binary(
+    name = "insertion_sort",
+    srcs = ["insertion_sort.py"],
+    main = "insertion_sort.py",
+)
+
+py_binary(
+    name = "merge_sort",
+    srcs = ["merge_sort.py"],
+    main = "merge_sort.py",
+)
+
+py_binary(
+    name = "quick_sort",
+    srcs = ["quick_sort.py"],
+    main = "quick_sort.py",
+)
