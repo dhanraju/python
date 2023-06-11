@@ -210,12 +210,40 @@ The --abort flag is an escape hatch. It stops the merge and reset the files in w
    </thead>
    <tbody>
       <tr>
-         <td>data1</td>
-         <td>data2</td>
+         <td>git branch</td>
+         <td>[Used to manage branches](https://git-scm.com/docs/git-branch)</td>
       </tr>
       <tr>
-         <td>data11</td>
-         <td>data12</td>
+         <td>git branch &lt;name&gt;</td>
+         <td>Creates the branch</td>
+      </tr>
+      <tr>
+         <td>git branch -d &lt;name&gt;</td>
+         <td>Deletes the branch</td>
+      </tr>
+      <tr>
+         <td>git branch -D &lt;name&gt;</td>
+         <td>Forcibly deletes the branch</td>
+      </tr>
+      <tr>
+         <td>git checkout &lt;branch&gt;</td>
+         <td>Switches to a branch</td>
+      </tr>
+      <tr>
+         <td>git checkout -b &lt;branch&gt;</td>
+         <td>Creates a new branch an Switches to it</td>
+      </tr>
+      <tr>
+         <td>git merge &lt;branch&gt;</td>
+         <td>Merge joins branches together</td>
+      </tr>
+      <tr>
+         <td>git merge --abort</td>
+         <td>If there are merge conflicts, --abort can be used to abort the merge action.</td>
+      </tr>
+      <tr>
+         <td>git log --grach --oneline</td>
+         <td>This shows a summarized view of the commit history for a repo.</td>
       </tr>
    </tbody>
 </table>
