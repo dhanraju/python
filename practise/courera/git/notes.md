@@ -211,31 +211,31 @@ The --abort flag is an escape hatch. It stops the merge and reset the files in w
    <tbody>
       <tr>
          <td>git branch</td>
-         <td>[Used to manage branches](https://git-scm.com/docs/git-branch)</td>
+         <td><a href="https://git-scm.com/docs/git-branch">Used to manage branches</a></td>
       </tr>
       <tr>
          <td>git branch &lt;name&gt;</td>
-         <td>Creates the branch</td>
+         <td><a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Creates the branch</a></td>
       </tr>
       <tr>
          <td>git branch -d &lt;name&gt;</td>
-         <td>Deletes the branch</td>
+         <td><a href="https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--D">Deletes the branch</a></td>
       </tr>
       <tr>
          <td>git branch -D &lt;name&gt;</td>
-         <td>Forcibly deletes the branch</td>
+         <td><a href="https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--D">Forcibly deletes the branch</a></td>
       </tr>
       <tr>
          <td>git checkout &lt;branch&gt;</td>
-         <td>Switches to a branch</td>
+         <td><a href="https://git-scm.com/docs/git-checkout">Switches to a branch</a></td>
       </tr>
       <tr>
          <td>git checkout -b &lt;branch&gt;</td>
-         <td>Creates a new branch an Switches to it</td>
+         <td>Creates a new branch an <a href="https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt--bltnewbranchgt">Switches to it</a></td>
       </tr>
       <tr>
          <td>git merge &lt;branch&gt;</td>
-         <td>Merge joins branches together</td>
+         <td><a href="https://git-scm.com/docs/git-merge">Merge joins branches together</a></td>
       </tr>
       <tr>
          <td>git merge --abort</td>
@@ -243,7 +243,7 @@ The --abort flag is an escape hatch. It stops the merge and reset the files in w
       </tr>
       <tr>
          <td>git log --grach --oneline</td>
-         <td>This shows a summarized view of the commit history for a repo.</td>
+         <td><a href="https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History">This shows a summarized view of the commit history for a repo.</a></td>
       </tr>
    </tbody>
 </table>
