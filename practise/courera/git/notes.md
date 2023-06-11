@@ -194,3 +194,28 @@ The commit message will be automatically generated as
 Kept lines from both branches."
 
 $ git log --graph --oneline
+
+If we want to throw away the merge and start over, then use the command,
+
+$ git merge --abort
+
+The --abort flag is an escape hatch. It stops the merge and reset the files in working tree and brings the current branch to the previous commit before the merge happened.
+
+<table>
+   <thead>
+      <tr>
+         <th>Command</th>
+         <th>Explanation & Link</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>data1</td>
+         <td>data2</td>
+      </tr>
+      <tr>
+         <td>data11</td>
+         <td>data12</td>
+      </tr>
+   </tbody>
+</table>
