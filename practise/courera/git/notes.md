@@ -210,12 +210,40 @@ The --abort flag is an escape hatch. It stops the merge and reset the files in w
    </thead>
    <tbody>
       <tr>
-         <td>data1</td>
-         <td>data2</td>
+         <td>git branch</td>
+         <td><a href="https://git-scm.com/docs/git-branch">Used to manage branches</a></td>
       </tr>
       <tr>
-         <td>data11</td>
-         <td>data12</td>
+         <td>git branch &lt;name&gt;</td>
+         <td><a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Creates the branch</a></td>
+      </tr>
+      <tr>
+         <td>git branch -d &lt;name&gt;</td>
+         <td><a href="https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--D">Deletes the branch</a></td>
+      </tr>
+      <tr>
+         <td>git branch -D &lt;name&gt;</td>
+         <td><a href="https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--D">Forcibly deletes the branch</a></td>
+      </tr>
+      <tr>
+         <td>git checkout &lt;branch&gt;</td>
+         <td><a href="https://git-scm.com/docs/git-checkout">Switches to a branch</a></td>
+      </tr>
+      <tr>
+         <td>git checkout -b &lt;branch&gt;</td>
+         <td>Creates a new branch an <a href="https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt--bltnewbranchgt">Switches to it</a></td>
+      </tr>
+      <tr>
+         <td>git merge &lt;branch&gt;</td>
+         <td><a href="https://git-scm.com/docs/git-merge">Merge joins branches together</a></td>
+      </tr>
+      <tr>
+         <td>git merge --abort</td>
+         <td>If there are merge conflicts, --abort can be used to abort the merge action.</td>
+      </tr>
+      <tr>
+         <td>git log --grach --oneline</td>
+         <td><a href="https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History">This shows a summarized view of the commit history for a repo.</a></td>
       </tr>
    </tbody>
 </table>
